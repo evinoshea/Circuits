@@ -3,7 +3,6 @@
 
 \usepackage{graphicx}
 \graphicspath{ {tex_pics/} }
-\usepackage{siunitx}
 
 
 \begin{document}
@@ -37,7 +36,14 @@ In the Part A of the lab a diode was used to convert the AC signal into only a p
     \caption{This circuit only supplies postive voltage to the oscilloscope.}
 \end{figure}
 
-In the second part of the lab, this property was used to allow the positive and negative voltages through while inverting the negative voltage. This caused the output voltage to be all positive and looked similar to a DC output.
+In the second part of the lab, the diode was used to allow the positive and negative voltages through while inverting the negative voltage. The circuit used for this part of the lab is shown below:
+
+\begin{figure}
+    \includegraphics[scale=0.6]{lab3circuit.png}  
+    \caption{A full wave rectifier with input and output connected to an ocsilloscope}
+\end{figure}
+
+This caused the output voltage to be all positive and looked similar to a DC output.
 
 For the third part of the lab, a zener diode was investigated. The distinction between a regular diode and a zener diode is that a zener diode will allow voltage to pass in both directions, but in the reverse-bias direction, there is a minimum voltage required to cause current flow. This voltage is called the zener voltage.
 
