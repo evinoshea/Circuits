@@ -1,0 +1,128 @@
+\documentclass[singlecolumn, amsmath]{revtex4}
+
+
+\usepackage{graphicx}
+
+
+\begin{document}
+
+
+\title{PHYS 605 Lab#1} 
+
+\author{Evin O'Shea}  % fill in your name here
+\email{eco2000@wildcats.unh.edu}  % add your email address 
+\date{\today}  
+
+
+\begin{abstract}
+
+	
+
+\end{abstract}
+
+\maketitle
+
+%
+%  Now that the initial formatting and first-page details are set, let's add some relevant sections to the paper
+%
+\section{Background}
+
+	
+\newline\newline
+\section{Methodology}
+
+	
+\newpage
+
+\section{Results and Analysis}
+
+	The data recorded is shown below:
+
+\begin{center}
+    \begin{tabular}{| l | l | l | l | l | l |}
+    \hline
+    $\theta_{right}$ (degrees) & $\theta_{left}$ (degrees) & $\theta_{average}$ (degrees) & $\lambda_{measured}$ (nm)& $\lambda_{actual}$ (nm) & $\% Error $ \\ \hline
+    
+    24    & 23.5  & 23.8 $\pm$ 0.25 	& 403 $\pm$ 3.99 & 404.66 & 0.472  \\ \hline
+    25.25 & 24.5  & 24.9 $\pm$ 0.375 	& 421 $\pm$ 5.94 & 412.04 & 2.09 \\ \hline
+    26.25 & 25.5  & 25.9 $\pm$ 0.375 	& 436 $\pm$ 5.89 & 439.86 & 0.785  \\ \hline
+    30    & 28.5  & 29.3 $\pm$ 0.75 	& 489 $\pm$ 11.4 & 485.56 & 0.631  \\ \hline
+    35    & 32    & 33 $\pm$ 1 		& 545 $\pm$ 14.6 & 542.53 & 0.390  \\ \hline
+    36.5  & 34.25 & 35.4 $\pm$ 1.13	& 575 $\pm$ 16.9 & 587.13 & 1.40  \\
+    \hline
+    \end{tabular}
+\end{center}
+
+	The left and right angles were used to calculate $\theta_{average}$. Then $\theta_{average}$ was used to calculate $\lambda_{measured}$ using the equation for diffraction:
+
+\begin{equation}
+\lambda = \frac{h\sin(\theta)}{m}
+\end{equation}
+
+	Where m can be any integer; however, only the m = 1 spectra could be observed. This simplified equation is showed below:
+
+\begin{equation}
+\lambda = h\sin(\theta)
+\end{equation}
+
+	In this equation, "h" is distance between slits, given by the diffration grating itself (for both gratings h = 1000 nm). The error for $\lambda$ was given by the equation:
+
+\begin{equation}
+\delta\lambda = \sqrt{(\frac{\partial\lambda}{\partial\theta}\delta\theta)^2}
+\end{equation}
+
+	The last entry in the table was the percent error. This was calculated from the equation:
+
+\begin{center}
+$\%error = \frac{(\lambda_{measured}) - (\lambda_{actual})}{(\lambda_{actual})}\times100$
+\end{center}
+
+	The mercury spectrum was recorded well. There were spectral lines close to the observed spectra with similar relative intensity. Since intensity was only recorded in notes, and was not measure in the lab, it was difficult to compare the database intensities to the recorded descriptions. The largest percent error was 2.09\% this is relatively low error for the lab. The mercury lamp was a bright purple. This made it a little surprising that the spectra had green and orange emissions; however, the purple emissions were bright. It makes sense that the lamp would have a purple color.
+
+	The spectra of the unknown element is shown below. There are actual values for similar spectra for neon recorded from the NIST database. The percent error was calculated using the recorded wavelengths and the wavelengths from the database for neon. The data is shown here: 
+
+	
+\begin{center}
+    \begin{tabular}{| l | l | l | l | l | l |}
+    \hline
+    $\theta_{right}$ (degrees) & $\theta_{left}$ (degrees) & $\theta_{average}$ (degrees) & $\lambda_{measured}$ (nm) & $\lambda_{actual}$ (nm) & $\% Error $ \\ \hline
+    31.5  & 30.5  & 31 $\pm$ 0.5     & 515 $\pm$ 7.48 & 514.50 & 0.104   \\ \hline
+    33    & 31    & 32 $\pm$ 1 	     & 530 $\pm$ 14.8 & 533.08 & 0.593   \\ \hline
+    33    & 31.5  & 32.3 $\pm$ 0.75  & 534 $\pm$ 11.1 & 534.11 & 0.0927  \\ \hline
+    37.25 & 35    & 36.1 $\pm$ 1.13  & 590 $\pm$ 15.9 & 588.19 & 0.231   \\ \hline
+    37.5  & 35.5  & 36.5 $\pm$ 1     & 595 $\pm$ 14.0 & 597.46 & 0.442   \\ \hline
+    38    & 36.25 & 37.1 $\pm$ 0.875 & 604 $\pm$ 12.2 & 603.00 & 0.0922  \\ \hline
+    39    & 36.75 & 37.9 $\pm$ 1.13  & 614 $\pm$ 15.5 & 614.31 & 0.0595  \\ \hline
+    39.25 & 37.25 & 38.3 $\pm$ 1     & 619 $\pm$ 13.7 & 618.21 & 0.142   \\ \hline
+    39.5  & 37.5  & 38.5 $\pm$ 1     & 623 $\pm$ 13.7 & 621.73 & 0.127   \\ \hline
+    40 	  & 38    & 39 $\pm$ 1 	     & 629 $\pm$ 13.6 & 633.44 & 0.651   \\ \hline
+    40.75 & 38.5  & 39.6 $\pm$ 1.13  & 638 $\pm$ 15.1 & 640.22 & 0.385   \\
+    \hline
+    \end{tabular}
+\end{center}
+
+	The spectrum correlated very well to the neon spectrum. A picture of the neon spectrum looks very similar to how the unknown did, with several green lines, many bright yellow and orange lines, and a few red lines. A picture of this spectrum is shown below:
+
+\begin{figure}[h]  
+
+\includegraphics[scale = 0.2]{neon.eps}  
+\graphicspath{ {/home/evin/Desktop/School/Circuits/lab1} }
+
+\end{figure}
+
+	Using the NIST database, values for lines that could be the ones measured were recorded and percent error was calculated. The percent error for these calculations was very low. This is an indication that the unknown was neon.
+
+	There was a lot of uncertainty in the lab even though the percent error values were low values. The main source of error was likely moving the entire instrument used to observe the spectrum. It was clear that something was wrong with the measurments as the angles on one side were larger than the other side for both data sets. It is likely that the setup was moved and the angles were then ofset. This made the error ($\delta\lambda$) large for many of the measurements. The next largest source of error was simply the limitations of the instrument. There were often two lines at the same angle (to the precision of the instrument) so these measurments were recorded in the middle of the two lines and the actual value was given from the brightest line near the recorded data point.
+
+\section{Conclusion}
+
+
+
+
+
+\section{References}
+
+
+
+
+\end{document}
