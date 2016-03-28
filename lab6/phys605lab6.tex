@@ -32,7 +32,7 @@ The lab revolved around the behavior of diodes in AC circuits. Diodes are an int
 In the Part A of the lab a diode was used to convert the AC signal into only a positive signal. This demonstrated the diode property of only allowing current flow in one direction. When the AC source supplies a positive voltage the diode would allow current flow through. When the voltage source supplies a negative voltage the diode will not let current flow through. The circuit used for this part of the lab was built in two aprts. First the circuit was built with a resistor and a diode in series with the oscilliscope connected in parallel with the voltage source and the diode. After this circuit was investigated a 3V DC supply was added to the circuit between the resistor and diode. The final circuit for this part of the lab is shown below:
 
 \begin{figure}
-    \includegraphics[scale=0.3]{halfwave.png}  
+    \includegraphics[scale=0.25]{halfwave.png}  
     \caption{This circuit only supplies postive voltage to the oscilloscope.}
 \end{figure}
 
@@ -83,79 +83,92 @@ The left side was connected to both DC and AC sources to invesitage different pr
 \section{Results and Analysis}
 
 \subsection{Data}
-For part A of the lab, first only part of the circuit was built as described previously. This setup was investigated with varying voltages and frequencies for the input source.
+For part A of the lab, first only part of the circuit was built as described previously. This setup was investigated with varying voltages and frequencies for the input source. All voltages for $V_{in}$ and $V_{out}$ were maximum voltages.
 
 
-The input source was initially set to an amplitude and frequency of 2.64V and 7.225Hz respectively. The $V_{max}$ for the diode was 1.80V.
+The input source was initially set to an amplitude and frequency of 2.64V and 7.225Hz respectively. The $V_{out}$ for the diode was 1.80V.
 
 \begin{figure}
     \includegraphics[scale=0.3]{1800mV.png}  
-    \caption{This circuit only supplies postive voltage to the oscilloscope.}
+    \caption{$V_{in}$ = 2.64V f=7.225Hz $V_{out}$= 1.80V}
 \end{figure}
 
 
-second amplitude: 4.08V f=7.225Hz
--V2(max) 2.72V
+The group then increased the amplitude of the input voltage to 4.08V. The resulting $V_{out}$ was 2.72V.
 
 \begin{figure}
     \includegraphics[scale=0.3]{2720mV.png}  
-    \caption{This circuit only supplies postive voltage to the oscilloscope.}
+    \caption{$V_{in}$ = 4.08V f=7.225Hz $V_{out}$= 2.72V}
 \end{figure}
 
 
-third frequency: 2.64V f=75.19Hz
--V2(max) 1.76V
+The group then reset the input voltage to 2.64V and increased the frequency to 75.19Hz. The resulting $V_{out}$ was 1.76V
 
 \begin{figure}
     \includegraphics[scale=0.3]{1760mV.png}  
-    \caption{This circuit only supplies postive voltage to the oscilloscope.}
+    \caption{$V_{in}$ = 2.64V f=75.19Hz $V_{out}$= 1.76V}
 \end{figure}
 
 %fourth frequency: same for higher
 
 After adjusting the amplitude and frequency of the input voltage a 3.065V DC source was added to the circuit attatched by another diode as shown in figure (1). 
 
-The input voltage and frequency were first set to 2.64V and 731.0mHz respectively. The $V_{max}$ for the diode was 464mV.
-V2 464mV
-
-\begin{figure}
-    \includegraphics[scale=0.3]{464mV.png}  
-    \caption{This circuit only supplies postive voltage to the oscilloscope.}
-\end{figure}
-
-
-
-second: 2.64V  74.63Hz
-V2 480mV
-
-\begin{figure}
-    \includegraphics[scale=0.3]{480mV.png}  
-    \caption{This circuit only supplies postive voltage to the oscilloscope.}
-\end{figure}
-
-third: 1.48V f=7.225
-v2 460mV
+The group then decreased the voltage of the input source to 1.48V and set the frequency to 7.225Hz as it was initially. The resulting $V_{out}$ was 460mV
 
 \begin{figure}
     \includegraphics[scale=0.3]{460mV.png}  
-    \caption{This circuit only supplies postive voltage to the oscilloscope.}
+    \caption{$V_{in}$ = 1.48V f=7.225Hz $V_{out}$= 460mV}
+\end{figure}
+
+The input voltage and frequency were then set to 2.64V and 731.0mHz respectively. The $V_{out}$ for the diode was 464mV.
+
+\begin{figure}
+    \includegraphics[scale=0.3]{464mV.png}  
+    \caption{$V_{in}$ = 2.64V f=731.0mHz $V_{out}$= 464mV}
+\end{figure}
+
+
+The group increased the frequency to 74.63Hz. The resulting $V_{out}$ was 480mV
+
+\begin{figure}
+    \includegraphics[scale=0.3]{480mV.png}  
+    \caption{$V_{in}$ = 2.64V f=74.63Hz $V_{out}$= 480mV}
 \end{figure}
 
 
 
 
+%don't need this right??
 %\subsection{Calculations}
 
 
 
  
 \subsection{Analysis}
+For part A of the lab the voltage across a single diode was measured with varying input voltages. When only an AC voltage source was connected to the diode and a resistor that were in series, the result was half of a sine wave as expected because the diode only allows current flow in one direction. The rest of the curve was a line with a small positive slope. 
+%THIS I'm not sure about annnd
+This is also because the initial part of the positive input will not cause current flow as the diode has a minimum voltage required to cause current flow. 
+
+When the amplitude of the input source was increased, the straight line looked more flat because it was the same size as before, but the amplitude of the positive curve was not larger. The other part of the curve simply had a larger amplitude because the input was larger. 
+
+As the frequency was increased, the linear part of the curve looked more flat and the amplitude decreased only slightly. This happened because the minimum voltage for the diode was reached faster. As the frequency was further increased, the plot looked more like a DC source that was turning on and off.
+%and again not fully sure....
+
+After the 3.065V DC source was added with the diode as shown in figure (1). The amplitude of the oscillations of voltage across the diode were now flat on top and bottom. The added voltage caused the voltage to be capped as the input voltage increased. The bottom was again flat because the negative part of the AC source would not pass through the diode.
+%not sure about the curvyness again...
+
+When the frequency was increased, the plot flattened out on top and bottom and looked again like a DC input that was flicketing up and down by 480mV. This makes sense as the diode will reach the maximum voltage it can allow quickly and will stay  constant until the AC source supplies a negative voltage which will not affect the voltage across the diode.
+
+%When the frequency was decreased and the voltage was increased, the plot looekd very peculiar.  
+% D:
+
+
+
 
 
 \section{Conclusion}
-The relationship between frequency, impedance, and voltage was made obvious, and observations matched expectations based on known equations. The resulting improved understanding and intuition for a new type of circuit makes this successful.
+The first part of the lab was completed successfully as the group was able to demonstrate that a diode can be used to create close to half of a DC voltage supply. The group discovered that for higher frequency input voltages the plot was more flat on top and bottom. The correct properties of the diode were deomonstrated in this part of the lab.
 
-Measured values of gain were compared to calculated values with some error, which seemed to increase at extreme values. The roll off was calculated, and the group was able to observe the behavior of a RC circuit in frequencies that were a part of the filtered frequencies.
 
 \end{document}
 
