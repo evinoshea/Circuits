@@ -32,22 +32,27 @@ The lab revolved around the behavior of diodes in AC circuits. Diodes are an int
 In the Part A of the lab a diode was used to convert the AC signal into only a positive signal. This demonstrated the diode property of only allowing current flow in one direction. When the AC source supplies a positive voltage the diode would allow current flow through. When the voltage source supplies a negative voltage the diode will not let current flow through. The circuit used for this part of the lab was built in two aprts. First the circuit was built with a resistor and a diode in series with the oscilliscope connected in parallel with the voltage source and the diode. After this circuit was investigated a 3V DC supply was added to the circuit between the resistor and diode. The final circuit for this part of the lab is shown below:
 
 \begin{figure}
-    \includegraphics[scale=0.6]{lab3circuit.png}  
+    \includegraphics[scale=0.6]{halfwave.png}  
     \caption{This circuit only supplies postive voltage to the oscilloscope.}
 \end{figure}
 
 In the second part of the lab, the diode was used to allow the positive and negative voltages through while inverting the negative voltage. The circuit used for this part of the lab is shown below:
 
 \begin{figure}
-    \includegraphics[scale=0.6]{lab3circuit.png}  
+    \includegraphics[scale=0.6]{bridge.png}  
     \caption{A full wave rectifier with input and output connected to an ocsilloscope}
 \end{figure}
 
-This caused the output voltage to be all positive and looked similar to a DC output.
+The circuit makes all the voltage positive. As positive voltage is supplied to the circuit current will pass through the top left diode and not the bottom left because of the orientation of the diode. Current will then flow down through the resistor and not the top right diode. As negative voltage is supplied to the circuit current will flow from the bottom side of the AC source. As the current flows to the right side of the bridge it will pass through the top right diode and not the bottom right. The current will then flow down through the resistor as it did when a positive voltage was supplied. This combination will cause flow in only one direction through the resistor and the output of the bridge.
 
-For the third part of the lab, a zener diode was investigated. The distinction between a regular diode and a zener diode is that a zener diode will allow voltage to pass in both directions, but in the reverse-bias direction, there is a minimum voltage required to cause current flow. This voltage is called the zener voltage.
+For the third part of the lab, a zener diode was investigated. The distinction between a regular diode and a zener diode is that a zener diode will allow voltage to pass in both directions, but in the reverse-bias direction, there is a minimum voltage required to cause current flow. This voltage is called the zener voltage. A diagram of the circuit for this part of the lab is shown below:
 
+\begin{figure}
+    \includegraphics[scale=0.6]{zener.png}  
+    \caption{This circuit only supplies postive voltage to the oscilloscope.}
+\end{figure}
 
+The left side was connected to both DC and AC sources to invesitage different properties of the zener diode. 
 
 
 \begin{figure}
