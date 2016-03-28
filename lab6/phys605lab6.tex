@@ -2,7 +2,7 @@
 \documentclass[twocolumn, amsmath]{revtex4}
 
 \usepackage{graphicx}
-\graphicspath{ {tex_pics/} }
+%\graphicspath{ {tex_pics/} }
 
 
 \begin{document}
@@ -32,14 +32,14 @@ The lab revolved around the behavior of diodes in AC circuits. Diodes are an int
 In the Part A of the lab a diode was used to convert the AC signal into only a positive signal. This demonstrated the diode property of only allowing current flow in one direction. When the AC source supplies a positive voltage the diode would allow current flow through. When the voltage source supplies a negative voltage the diode will not let current flow through. The circuit used for this part of the lab was built in two aprts. First the circuit was built with a resistor and a diode in series with the oscilliscope connected in parallel with the voltage source and the diode. After this circuit was investigated a 3V DC supply was added to the circuit between the resistor and diode. The final circuit for this part of the lab is shown below:
 
 \begin{figure}
-    \includegraphics[scale=0.6]{halfwave.png}  
+    \includegraphics[scale=0.3]{halfwave.png}  
     \caption{This circuit only supplies postive voltage to the oscilloscope.}
 \end{figure}
 
 In the second part of the lab, the diode was used to allow the positive and negative voltages through while inverting the negative voltage. The circuit used for this part of the lab is shown below:
 
 \begin{figure}
-    \includegraphics[scale=0.6]{bridge.png}  
+    \includegraphics[scale=0.3]{bridge.png}  
     \caption{A full wave rectifier with input and output connected to an ocsilloscope}
 \end{figure}
 
@@ -48,105 +48,108 @@ The circuit makes all the voltage positive. As positive voltage is supplied to t
 For the third part of the lab, a zener diode was investigated. The distinction between a regular diode and a zener diode is that a zener diode will allow voltage to pass in both directions, but in the reverse-bias direction, there is a minimum voltage required to cause current flow. This voltage is called the zener voltage. A diagram of the circuit for this part of the lab is shown below:
 
 \begin{figure}
-    \includegraphics[scale=0.6]{zener.png}  
+    \includegraphics[scale=0.3]{zener.png}  
     \caption{This circuit only supplies postive voltage to the oscilloscope.}
 \end{figure}
 
 The left side was connected to both DC and AC sources to invesitage different properties of the zener diode. 
+%One important use of the zener diode was to "clip" the voltage source. This means that the zener diode caps the voltage allowed through... 
+%********need to add more when I can see plots******
 
 
-\begin{figure}
-    \includegraphics[scale=0.6]{lab3circuit.png}  
-    \caption{A circuit built so that the voltage across the capacitor, $v_C$, can be compared with the voltage from the source, $v_{in}$. The phase shift $\phi$ can also be observed.}
-\end{figure}
 
 
 
 \section{Methodology}
 
 \begin{enumerate}
-    \item Construct RC circuit with oscilloscope as show in figure (1).
-    \item Adjust the circuit in order to gain some intuition about how the it behaves--- vary the resistor, frequency, and capacitor and note the effects. 
-    \item Choose a circuit design such that a range of behavior can be observed while keeping the frequency below \SI{100}{\kilo\hertz}.
-    \item Measure and record the voltage drop, $V_C$, and the phase shift with respect to input, $\phi_C$ across the capacitor. 
-    \item Measure and record the voltage drop, $V_R$, and the phase shift with respect to input, $\phi_R$ across the resistor. 
-    \item Repeat steps (4) and (5) for several (about ten) frequencies spanning multiple orders of magnitude.
+    \item Construct RC circuit with oscilloscope as show in figure (1) without the 3V DC source and diode attatched.
+    \item Take record of the plot from the oscilloscpe.
+    \item Adjust frequency and amplitude of input source and repeat step 2.
+    \item Build diode brdge shown in figure (2).
+    \item Connect input source (one that is external from the protoboard) and connect the oscilloscope as shown in figure (2).
+    \item Repeat steps 2 and 3 to get data about the bridge.
+    \item Construct the circuit shown in figure (3).
+    \item Add an adjustable DC input to the left side of the circuit and connect a measurement device to the right side of the circuit.
+    \item Make recordings of the output voltages as the input voltage is modified.
+    \item Swap the DC input for an AC input and swap the measurement device for one suited for AC voltages (oscilloscope) if necessary.
+    \item Take record of the plot shown on the oscilloscope.
+    \item Swap the zener diode out for another one and repeat step 11.
+    \item Combine the two diodes in series in the same direction and make record of the plot on the oscilloscope.
+    \item Combine the two zener diodes in parallel in opposite directions to "clip" both positive and negative voltages from the AC input.
 \end{enumerate}
 
 
 \section{Results and Analysis}
 
 \subsection{Data}
+For part A of the lab, first only part of the circuit was built as described previously. This setup was investigated with varying voltages and frequencies for the input source.
 
-3.065V (DC)
-first amplitude/frequency: 2.64V  f=7.225Hz 
--V2(max) 1.78V
+
+The input source was initially set to an amplitude and frequency of 2.64V and 7.225Hz respectively. The $V_{max}$ for the diode was 1.80V.
+
+\begin{figure}
+    \includegraphics[scale=0.3]{1800mV.png}  
+    \caption{This circuit only supplies postive voltage to the oscilloscope.}
+\end{figure}
+
 
 second amplitude: 4.08V f=7.225Hz
 -V2(max) 2.72V
 
-second frequency: 2.64V f=0.732Hz
--V2(max) 960mV
+\begin{figure}
+    \includegraphics[scale=0.3]{2720mV.png}  
+    \caption{This circuit only supplies postive voltage to the oscilloscope.}
+\end{figure}
 
-third frequency: 2.64V f=74.63Hz
+
+third frequency: 2.64V f=75.19Hz
 -V2(max) 1.76V
 
-fourth frequency: same for higher
+\begin{figure}
+    \includegraphics[scale=0.3]{1760mV.png}  
+    \caption{This circuit only supplies postive voltage to the oscilloscope.}
+\end{figure}
 
-WITH DIODE AND +3V
+%fourth frequency: same for higher
 
-first: 2.64V 731.0mHz
+After adjusting the amplitude and frequency of the input voltage a 3.065V DC source was added to the circuit attatched by another diode as shown in figure (1). 
+
+The input voltage and frequency were first set to 2.64V and 731.0mHz respectively. The $V_{max}$ for the diode was 464mV.
 V2 464mV
+
+\begin{figure}
+    \includegraphics[scale=0.3]{464mV.png}  
+    \caption{This circuit only supplies postive voltage to the oscilloscope.}
+\end{figure}
+
+
 
 second: 2.64V  74.63Hz
 V2 480mV
 
+\begin{figure}
+    \includegraphics[scale=0.3]{480mV.png}  
+    \caption{This circuit only supplies postive voltage to the oscilloscope.}
+\end{figure}
+
 third: 1.48V f=7.225
 v2 460mV
 
-\end{center}
+\begin{figure}
+    \includegraphics[scale=0.3]{460mV.png}  
+    \caption{This circuit only supplies postive voltage to the oscilloscope.}
+\end{figure}
 
 
-\subsection{Calculations}
 
-The impedance of the capacitor, $Z_C$, and the impedance of the resistor, $Z_R$, could be calculated using equations (1) and (2).\\
-$$Z_R(\omega)=\SI{10\,000}{\ohm}$$
-$$Z_C(\omega)=\frac{1}{j \omega \,\, 4.7\times10^{-6} }$$
-Using equation (6), the gain was calculated, first with the ratio of the voltages, then using the impedances where $Z_2$ was the impedance of the capacitor and $Z_1$ was the impedance of the resistor. This allowed us to calculate error.
-\begin{center}
-	\begin{ruledtabular}
-    \begin{tabular}{ l  l  l l}
-    f [Hz] & $Gain_{measured}$& $Gain_{expected}$ &  \% Error\\ \colrule
-10.92&-10.4&-12.5	&  16.8 \\
-24.04&-16.8&-18.17	&  7.53\\
-71.73&-24.6&-26.9	&  6.92\\
-97.66&-28.9&-29.5	&  2.03\\
-337.8&-39.2&-40.1	&  2.24\\
-757.4&-48.9&-47.0	&  4.68\\
-1\,066&-48.9&-50.0	&  2.20\\
-5\,102&-55.7&-63.6	&  12.4\\
-12\,990&-57.6&-72.7	&  20.8\\
-    \end{tabular}
-    \end{ruledtabular}
-\end{center}
+
+%\subsection{Calculations}
+
+
 
  
 \subsection{Analysis}
-
-Observing the circuit's behavior qualitatively demonstrated that increasing resistance and decreasing capacitance causes an increase in the voltage across the capacitor. It also showed that a change in capacitance will change the phase shift, but a change in resistance will not.
-
-The variation in error for the attenuation suggests that a substantial portion of the error was due to the oscilloscope. There was also more error at the lowest frequencies and highest frequencies. This could be due to less accurate measurements being made when the voltage across the capacitor was very small.
-
-\begin{figure}[h]
-    \includegraphics[scale=0.24]{bode}
-    \caption{A Bode plot of the data. The measured values are in blue, while the expected values from equations (6) and (7) are in red.}
-\end{figure}
-
-Using the data collected, a Bode plot was drawn. It is apparent that all of the measured values are after the so-called ``-3 dB Point" as the gain plot is definitively negative.
-
-The phase shift plot seemed slightly more erratic. Because the plot is after the -3 dB point, it is expected that the phase will begin to approach $90^\circ$.
-
-A line was fit to the gain plot, and the slope showed that the roll off of the transfer function is 16.24 dB/decade. 
 
 
 \section{Conclusion}
