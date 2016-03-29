@@ -134,6 +134,14 @@ The group increased the frequency to 74.63Hz and the voltage to 2.64. The result
     \caption{$V_{in} = 2.64V$, $f=74.63Hz$, $V_{out}= 480mV$}
 \end{figure}
 
+The full wave rectifier was built, as in figure (2), using a ???k$\Omega$ resistor. %ADD RESISTANCE
+\begin{figure}[h]
+    \includegraphics[scale=0.04]{fullbridge1}  
+    \includegraphics[scale=0.039]{fullbridge2} 
+    \caption{Full bridge rectifier at about 2.3kHz, the first with a smaller input voltage, the second with a larger input voltage.}
+\end{figure}
+
+
 The circuit shown in figure (3) was built using a 2.219k$\Omega$ resistor. First, the the Zener diode's behavior was observed as input voltage was varied.
 \begin{figure}[h]
     \includegraphics[scale=0.2]{zenerdiode_plot}  
@@ -161,14 +169,14 @@ Two Zener diodes in opposite directions resulted in the clipping of both positiv
 \subsection{Analysis}
 When only an AC voltage source was connected to the diode and resistor that were in series, the result was half of a sine wave. This was what was expected because the diode only allows current flow in one direction. The current will flow only in the negative direction which will cause the voltage across the oscilloscope to be equal to the diode voltage. When current cannot flow through the diode almost all of the voltage is across the oscilloscope. This means that when the voltage of the input source is positive the voltage across the oscilloscope is equal to the input voltage. 
 
-When the amplitude of the input source was increased, the slight angle of linear portion of the plots appeared to decrease, as the larger amplitude of the positive curve made the slant relatively smaller.
+When the amplitude of the input source was increased, the slight angle of linear portion of the plots appeared to decrease, as the larger amplitude of the positive curve made the slant relatively smaller. As the frequency was increased the plot looked almost like a DC source that was turning on and off because the diode voltage was reached faster, reducing the curve on the bottom of the voltage plot.
 
-As the frequency was increased the plot looked almost like a DC source that was turning on and off because the diode voltage was reached faster, reducing the curve on the bottom of the voltage plot.
-
-When the reference voltage was added, the sinusoidal voltage across the diode became flat on top and bottom. When a negative input voltage was supplied, current flowed through the resistor and the voltage across the resistor was equal to the diode voltage. When the voltage of the input source was positive, the 3.065V from the DC source consumed the input voltage. Since the input voltage was never greater than 3V, the output voltage was zero. If the voltage of the input had been greater than 3V, then the voltage across the oscilloscope would have been equal to 3V.
+When the reference voltage was added, the sinusoidal voltage across the diode became flat on top and bottom, looking much like a square wave. When a negative input voltage was supplied, current flowed through the resistor and the voltage across the diode %this said resistor before, it's supposed to be diode, right?
+ was equal to the diode voltage. When the voltage of the input source was positive, the 3.065V from the DC source consumed the input voltage. The input voltage was never greater than 3V, and so the output voltage was 0V. If the voltage of the input had been greater than 3V, then the voltage across the oscilloscope would have been equal to 3V.
 
 When the frequency was increased, the plot flattened out on top and bottom and looked again like a DC input that was flickering up and down by 480mV. This makes sense as the diode was expected to vary between the diode voltage and zero. When frequency was increased the diode voltage was reached more quickly and therefore makes the plot look flatter.
 
+The full wave rectifier behaved very much as was expected. The output voltage looked like a sine wave where all of the negative values had been turned positive. 
 
 
 \section{Conclusion}

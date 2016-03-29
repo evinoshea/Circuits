@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 MAR 2016 23:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  29 MAR 2016 09:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -314,25 +314,40 @@ Package pdftex.def Info: 480mV.png used on input line 133.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<zenerdiode_plot.jpg, id=22, 1124.2pt x 843.15pt>
+<fullbridge1.jpg, id=22, 2630.82875pt x 1805.74625pt>
+File: fullbridge1.jpg Graphic file (type jpg)
+ <use fullbridge1.jpg>
+Package pdftex.def Info: fullbridge1.jpg used on input line 139.
+(pdftex.def)             Requested size: 105.21523pt x 72.21754pt.
+
+<fullbridge2.jpg, id=23, 2708.1175pt x 1865.97125pt>
+File: fullbridge2.jpg Graphic file (type jpg)
+ <use fullbridge2.jpg>
+Package pdftex.def Info: fullbridge2.jpg used on input line 140.
+(pdftex.def)             Requested size: 105.62029pt x 72.77542pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<zenerdiode_plot.jpg, id=24, 1124.2pt x 843.15pt>
 File: zenerdiode_plot.jpg Graphic file (type jpg)
  <use zenerdiode_plot.jpg>
-Package pdftex.def Info: zenerdiode_plot.jpg used on input line 139.
+Package pdftex.def Info: zenerdiode_plot.jpg used on input line 147.
 (pdftex.def)             Requested size: 224.83601pt x 168.627pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<zener2.jpg, id=23, 2919.90875pt x 2245.38875pt>
+<zener2.jpg, id=25, 2919.90875pt x 2245.38875pt>
 File: zener2.jpg Graphic file (type jpg)
  <use zener2.jpg>
-Package pdftex.def Info: zener2.jpg used on input line 147.
+Package pdftex.def Info: zener2.jpg used on input line 155.
 (pdftex.def)             Requested size: 175.18697pt x 134.71751pt.
 
-<zener1.jpg, id=24, 2907.86375pt x 2265.46375pt>
+<zener1.jpg, id=26, 2907.86375pt x 2265.46375pt>
 File: zener1.jpg Graphic file (type jpg)
  <use zener1.jpg>
-Package pdftex.def Info: zener1.jpg used on input line 152.
+Package pdftex.def Info: zener1.jpg used on input line 160.
 (pdftex.def)             Requested size: 174.4643pt x 135.92195pt.
 
 
@@ -344,31 +359,32 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [2 <./1800mV.png> <./2720mV.png>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 165.
+ on input line 173.
 
-[3 <./1760mV.png> <./460mV.png> <./480mV.png> <./zenerdiode_plot.jpg>] [4 <./ze
-ner2.jpg> <./zener1.jpg>] (./phys605lab6.aux) ) 
+[3 <./1760mV.png> <./460mV.png> <./480mV.png> <./fullbridge1.jpg> <./fullbridge
+2.jpg>] [4 <./zenerdiode_plot.jpg> <./zener2.jpg> <./zener1.jpg>]
+(./phys605lab6.aux) ) 
 Here is how much of TeX's memory you used:
- 3701 strings out of 493089
- 48529 string characters out of 6134842
- 132497 words of memory out of 5000000
- 7151 multiletter control sequences out of 15000+600000
+ 3711 strings out of 493089
+ 48717 string characters out of 6134842
+ 135497 words of memory out of 5000000
+ 7159 multiletter control sequences out of 15000+600000
  7627 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,7n,23p,844b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr9.pfb>
-Output written on phys605lab6.pdf (4 pages, 5619949 bytes).
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmbx9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+9.pfb>
+Output written on phys605lab6.pdf (4 pages, 7989490 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
+ 71 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
