@@ -29,7 +29,7 @@ Diodes are passive circuit elements that allow current to flow in only one direc
 %not sure where to put this if at all
 %The second interesting property of diodes is that they have a minimum voltage required to pass current through/ has a max? clipps the voltage?
 
-A half wave rectifier uses diodes to let only positive voltage from an AC power source through. A DC power supply can also be added (as shown in figure (1)) to modify the behavior. Here, when the input voltage is negative, the measured voltage will be zero because the voltage will flow through the diode and it will be as though the circuit is short circuited. When the input voltage is positive and less than the DC voltage, %%FIX THIS PART
+A half wave rectifier uses diodes to let only positive voltage from an AC power source through. A DC reference voltage can also be added (as shown in figure (1)) to modify the behavior. Here, when the input voltage is negative, the measured voltage will be zero because the voltage will flow through the diode and it will be as though the circuit is short circuited. When the input voltage is positive and less than the DC voltage, %%FIX THIS PART
 
 \begin{figure}
     \includegraphics[scale=0.25]{halfwave.png}  
@@ -43,16 +43,16 @@ Diodes can also be used to construct a full wave rectifier, shown in figure (2),
     \caption{A full wave rectifier with input and output connected to an oscilloscope}
 \end{figure}
 
-The circuit makes all the voltage positive. As positive voltage is supplied to the circuit current will pass through the top left diode and not the bottom left because of the orientation of the diode. Current will then flow down through the resistor and not the top right diode. As negative voltage is supplied to the circuit current will flow from the bottom side of the AC source. As the current flows to the right side of the bridge it will pass through the top right diode and not the bottom right. The current will then flow down through the resistor as it did when a positive voltage was supplied. This combination will cause flow in only one direction through the resistor and the output of the bridge.
+The circuit makes all the voltage positive. As positive voltage is supplied, current will pass through the top left diode and not the bottom left because of the orientation of the diode. Current will then flow down through the resistor and not the top right diode. As negative voltage is supplied to the circuit, current will flow from the bottom side of the AC source. As the current flows to the right side of the bridge it will pass through the top right diode and not the bottom right. The current will then flow down through the resistor as it did when a positive voltage was supplied. This combination will cause flow in only one direction through the resistor and the output of the bridge.
 
-For the third part of the lab, a zener diode was investigated. The distinction between a regular diode and a zener diode is that a zener diode will allow voltage to pass in both directions, but in the reverse-bias direction, there is a minimum voltage required to cause current flow. This voltage is called the zener voltage. A diagram of the circuit for this part of the lab is shown below:
+Zener diodes are a kind of diode that will allow current to flow in the reverse-bias direction if the voltage is above a certain minimum voltage. This voltage is called the Zener voltage.
 
 \begin{figure}
     \includegraphics[scale=0.3]{zener.png}  
-    \caption{This circuit only supplies positive voltage to the oscilloscope.}
+    \caption{This circuit only supplies positive voltage to the oscilloscope, attached to the right terminals. The power source was connected to the left-side terminals.}
 \end{figure}
 
-The left side was connected to both DC and AC sources to investigate different properties of the zener diode. 
+Zener diodes allow only the Zener voltage to pass 
 %One important use of the zener diode was to "clip" the voltage source. This means that the zener diode caps the voltage allowed through... 
 %********need to add more when I can see plots******
 
@@ -64,7 +64,7 @@ The left side was connected to both DC and AC sources to investigate different p
 
 \begin{enumerate}
     \item Construct RC circuit with oscilloscope as show in figure (1) without the 3V DC source and diode attached.
-    \item Take record of the plot from the oscillscope.
+    \item Take record of the plot from the oscilloscope.
     \item Adjust frequency and amplitude of input source and repeat step 2.
     \item Build diode bridge shown in figure (2).
     \item Connect input source (one that is external from the protoboard) and connect the oscilloscope as shown in figure (2).
@@ -83,41 +83,40 @@ The left side was connected to both DC and AC sources to investigate different p
 \section{Results and Analysis}
 
 \subsection{Data}
-For part A of the lab, first only part of the circuit was built as described previously. This setup was investigated with varying voltages and frequencies for the input source. All voltages for $V_{in}$ and $V_{out}$ were maximum voltages.
+The half wave rectifier was investigated with various input voltages and frequencies. All voltages for $V_{in}$ and $V_{out}$ were maximum voltages.
 
+The input source was initially set to an amplitude of 2.64V and frequency 7.225Hz. The $V_{out}$ measured across the diode was 1.80V.
 
-The input source was initially set to an amplitude and frequency of 2.64V and 7.225Hz respectively. The $V_{out}$ for the diode was 1.80V.
-
-\begin{figure}
-    \includegraphics[scale=0.3]{1800mV.png}  
-    \caption{$V_{in}$ = 2.64V f=7.225Hz $V_{out}$= 1.80V}
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{1800mV.png}  
+    \caption{$V_{in}= 2.64V$, $f=7.225Hz$, $V_{out} = 1.80V$}
 \end{figure}
 
 
 The group then increased the amplitude of the input voltage to 4.08V. The resulting $V_{out}$ was 2.72V.
 
-\begin{figure}
-    \includegraphics[scale=0.3]{2720mV.png}  
-    \caption{$V_{in}$ = 4.08V f=7.225Hz $V_{out}$= 2.72V}
+\begin{figure}[h]
+    \includegraphics[scale=0.45]{2720mV.png}  
+    \caption{$V_{in}= 4.08V$, $f=7.225Hz$, $V_{out}= 2.72V$}
 \end{figure}
 
 
 The group then reset the input voltage to 2.64V and increased the frequency to 75.19Hz. The resulting $V_{out}$ was 1.76V
 
-\begin{figure}
-    \includegraphics[scale=0.3]{1760mV.png}  
-    \caption{$V_{in}$ = 2.64V f=75.19Hz $V_{out}$= 1.76V}
+\begin{figure}[h]
+    \includegraphics[scale=0.45]{1760mV.png}  
+    \caption{$V_{in} = 2.64V$, $f=75.19Hz$, $V_{out}= 1.76V$}
 \end{figure}
 
 %fourth frequency: same for higher
 
-After adjusting the amplitude and frequency of the input voltage a 3.065V DC source was added to the circuit attatched by another diode as shown in figure (1). 
+The reference voltage added was a 3.065V DC source, constructed in the manner shown in figure (1). 
 
-The group then decreased the voltage of the input source to 1.48V and set the frequency to 7.225Hz as it was initially. The resulting $V_{out}$ was 460mV
+The input voltage was decreased to 1.48V, and the frequency was set to 7.225Hz. The resulting $V_{out}$ was 460mV.
 
-\begin{figure}
-    \includegraphics[scale=0.3]{460mV.png}  
-    \caption{$V_{in}$ = 1.48V f=7.225Hz $V_{out}$= 460mV}
+\begin{figure}[h]
+    \includegraphics[scale=0.45]{460mV.png}  
+    \caption{$V_{in}= 1.48V$, $f=7.225Hz$, $V_{out}= 460mV$}
 \end{figure}
 
 %The input voltage and frequency were then set to 2.64V and 731.0mHz respectively. The $V_{out}$ for the diode was 464mV.
@@ -128,34 +127,47 @@ The group then decreased the voltage of the input source to 1.48V and set the fr
 %\end{figure}
 
 
-The group increased the frequency to 74.63Hz and the voltage to 2.64. The resulting $V_{out}$ was 480mV
+The group increased the frequency to 74.63Hz and the voltage to 2.64. The resulting $V_{out}$ was 480mV.
 
-\begin{figure}
-    \includegraphics[scale=0.3]{480mV.png}  
-    \caption{$V_{in}$ = 2.64V f=74.63Hz $V_{out}$= 480mV}
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{480mV.png}  
+    \caption{$V_{in} = 2.64V$, $f=74.63Hz$, $V_{out}= 480mV$}
+\end{figure}
+
+The circuit shown in figure (3) was built using a 2.219k$\Omega$ resistor. First, the the Zener diode's behavior was observed as input voltage was varied.
+\begin{figure}[h]
+    \includegraphics[scale=0.2]{zenerdiode_plot}  
+    \caption{Zener diode's response to varying voltage.}
+\end{figure}
+
+Two Zener diodes in series in the same direction acted the same as one.
+
+One Zener diode resulted in the clipping of the negative voltage.
+\begin{figure}[h]
+    \includegraphics[scale=0.06]{zener2}  
+    \caption{Zener diode clipping negative voltage.}
+\end{figure}
+Two Zener diodes in opposite directions resulted in the clipping of both positive and negative voltages.
+\begin{figure}[h]
+    \includegraphics[scale=0.06]{zener1}  
+    \caption{Zener diode clipping positive and negative voltage.}
 \end{figure}
 
 
 
 
-%don't need this right??
-%\subsection{Calculations}
-
-
 
  
 \subsection{Analysis}
-For part A of the lab the voltage across a single diode was measured with varying input voltages. When only an AC voltage source was connected to the diode and a resistor that were in series the result was half of a sine wave as expected because the diode only allows current flow in one direction. The current will flow only in the negative direction which will cause the voltage across the oscilloscope to be equal to the diode voltage. When current cannot flow through the diode almost all of the voltage is across the oscilloscope. This means that when the voltage of the input source is positive the voltage across the oscilloscope is equal to the input voltage. 
+When only an AC voltage source was connected to the diode and resistor that were in series, the result was half of a sine wave. This was what was expected because the diode only allows current flow in one direction. The current will flow only in the negative direction which will cause the voltage across the oscilloscope to be equal to the diode voltage. When current cannot flow through the diode almost all of the voltage is across the oscilloscope. This means that when the voltage of the input source is positive the voltage across the oscilloscope is equal to the input voltage. 
 
-When the amplitude of the input source was increased, the straight line looked more flat because it was the same magnitude as before but the amplitude of the positive curve was larger.
+When the amplitude of the input source was increased, the slight angle of linear portion of the plots appeared to decrease, as the larger amplitude of the positive curve made the slant relatively smaller.
 
-As the frequency was increased the plot looked more like a DC source that was turning on and off because the diode voltage was reached faster reducing the curve on the bottom of the voltage plot.
+As the frequency was increased the plot looked almost like a DC source that was turning on and off because the diode voltage was reached faster, reducing the curve on the bottom of the voltage plot.
 
-After the 3.065V DC source was added with the diode as shown in figure (1). The amplitude of the oscillations of voltage across the diode were now flat on top and bottom. When a negative input voltage was supplied current flowed through the resistor and the voltage across the resistor was equal to the diode voltage. When the voltage of the input source was positive the 3.065V from the DC source consumed the input voltage. Since the input voltage never reached greater than 3V, the output voltage was zero. If the voltage of the input had been greater than 3V then the voltage across the oscilloscope would have been equal to 3V.
+When the reference voltage was added, the sinusoidal voltage across the diode became flat on top and bottom. When a negative input voltage was supplied, current flowed through the resistor and the voltage across the resistor was equal to the diode voltage. When the voltage of the input source was positive, the 3.065V from the DC source consumed the input voltage. Since the input voltage was never greater than 3V, the output voltage was zero. If the voltage of the input had been greater than 3V, then the voltage across the oscilloscope would have been equal to 3V.
 
-When the frequency was increased, the plot flattened out on top and bottom and looked again like a DC input that was flickering up and down by 480mV. This makes sense as the diode will vray between the diode voltage and zero. When frequency is increased the diode voltage is reached more quickly and therefore makes the plot look more flat.
-
-
+When the frequency was increased, the plot flattened out on top and bottom and looked again like a DC input that was flickering up and down by 480mV. This makes sense as the diode was expected to vary between the diode voltage and zero. When frequency was increased the diode voltage was reached more quickly and therefore makes the plot look flatter.
 
 
 
