@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  29 MAR 2016 09:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  29 MAR 2016 14:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -342,16 +342,13 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: zener2.jpg Graphic file (type jpg)
  <use zener2.jpg>
 Package pdftex.def Info: zener2.jpg used on input line 155.
-(pdftex.def)             Requested size: 175.18697pt x 134.71751pt.
+(pdftex.def)             Requested size: 119.71703pt x 92.06152pt.
 
 <zener1.jpg, id=26, 2907.86375pt x 2265.46375pt>
 File: zener1.jpg Graphic file (type jpg)
  <use zener1.jpg>
-Package pdftex.def Info: zener1.jpg used on input line 160.
-(pdftex.def)             Requested size: 174.4643pt x 135.92195pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package pdftex.def Info: zener1.jpg used on input line 156.
+(pdftex.def)             Requested size: 119.22318pt x 92.88461pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -359,29 +356,33 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [2 <./1800mV.png> <./2720mV.png>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 173.
+ on input line 172.
 
 [3 <./1760mV.png> <./460mV.png> <./480mV.png> <./fullbridge1.jpg> <./fullbridge
-2.jpg>] [4 <./zenerdiode_plot.jpg> <./zener2.jpg> <./zener1.jpg>]
-(./phys605lab6.aux) ) 
+2.jpg>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 184.
+
+[4 <./zenerdiode_plot.jpg> <./zener2.jpg> <./zener1.jpg>] (./phys605lab6.aux) )
+ 
 Here is how much of TeX's memory you used:
  3711 strings out of 493089
  48717 string characters out of 6134842
- 137497 words of memory out of 5000000
+ 127497 words of memory out of 5000000
  7159 multiletter control sequences out of 15000+600000
  7627 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,7n,23p,844b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmbx9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-9.pfb>
-Output written on phys605lab6.pdf (4 pages, 7989724 bytes).
+ 37i,7n,23p,985b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on phys605lab6.pdf (4 pages, 7991246 bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
