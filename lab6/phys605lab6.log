@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  29 MAR 2016 09:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  29 MAR 2016 09:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -367,7 +367,7 @@ LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
 Here is how much of TeX's memory you used:
  3711 strings out of 493089
  48717 string characters out of 6134842
- 135497 words of memory out of 5000000
+ 137497 words of memory out of 5000000
  7159 multiletter control sequences out of 15000+600000
  7627 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -381,7 +381,7 @@ cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmmi9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 9.pfb>
-Output written on phys605lab6.pdf (4 pages, 7989490 bytes).
+Output written on phys605lab6.pdf (4 pages, 7989724 bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream
