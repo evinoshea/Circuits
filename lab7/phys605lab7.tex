@@ -29,7 +29,13 @@ Part C of the lab was to build a different op amp circuit. The lab group chose t
 
 \subsection{Background / Theory}
 
-Output impedance and voltage of a circuit is important to know. When a voltage is being supplied from an active circuit to a load, the output impedance can tell a lot about the limitations of the loads that can be used. If the output impedance of a passive circuit is much higher than the impedance of the circuit load, then sag can occur. This will mean that the circuit will not work as desired. The magnitude of the output impedance of a circuit can be measured by measuring the ouput voltage of a circuit with no load, and then measuring the ouput voltage with a load. The output impedance in voltage can be described by the thevenin equivalent of the circuit. The thevenin voltage is measured when th output voltage is measured without the load. When the load is applied, knowing the load resisitance and the voltage across the load will give the nortan current. Together, the thevenin voltage and nortan current can give the output impedance. A diagram of the circuit used to make measurements that will allow the norton current to be calculated is shown below:
+Output impedance and voltage of a circuit is important to know. When a voltage is being supplied from an active circuit to a load, the output impedance can tell a lot about the limitations of the loads that can be used. If the output impedance of a passive circuit is much higher than the impedance of the circuit load, then sag can occur. This will mean that the circuit will not work as desired. The magnitude of the output impedance of a circuit can be measured by measuring the ouput voltage of a circuit with no load, and then measuring the ouput voltage with a load. The voltage of the source is measured when the output voltage is measured without the load. When the load is applied, knowing the load resisitance and the voltage across the load will give the current. This information can be used to give the output resistance from the equation:
+
+\begin{equation}
+R_{o} =  \frac{V_{R_{o}}}{I_{L}} = (V_{o} - V_{L})\frac{R_{L}}{V_{L}}
+\end{equation}
+
+A diagram of the circuit used to make measurements that will allow the norton current to be calculated is shown below:
 
 \begin{figure}[h]
     \includegraphics[scale=0.25]{output.png}  
@@ -90,22 +96,25 @@ This time however, these are complex imedances. In this case, $Z_{in} = R_{in} +
 \section{Results and Analysis}
 
 \subsection{Data}
-The half wave rectifier was investigated with various input voltages and frequencies. All voltages for $V_{in}$ and $V_{out}$ were maximum voltages.
+The goal of part A of the lab was to make measurements to calculate the internal resisitance of the AC voltage source on the protoboard. The data collected for this sectionm is shown below:
 
-The input source was initially set to an amplitude of 2.64V and frequency 7.225Hz. The $V_{out}$ measured across the diode was 1.80V.
-
-\begin{figure}[h]
-    \includegraphics[scale=0.4]{1800mV.png}  
-    \caption{$V_{in}= 2.64V$, $f=7.225Hz$, $V_{out} = 1.80V$}
-\end{figure}
-
-
+\begin{center}
+	\begin{ruledtabular}
+    \begin{tabular}{ l l l }
+	$V_{o}$ (V) & $V_{L}$ (V) & $R_{L}$ (k$\Omega$) \\ \colrule
+	3.76 & 3.64 & 22.23  \\
+	3.76 & 3.70 & 148.4  \\
+	3.76 & 1.04 & 0.2184  \\
+	3.76 & 3.68 & 82.1  \\
+\end{tabular}
+    \end{ruledtabular}
+\end{center}
 
 For part C of the lab the group built a high pass filter and amplifier circuit using the op amp. The input voltage used for this section was 1V peak-to-peak. The data recorded is shown below:
 
 \begin{center}
 	\begin{ruledtabular}
-    \begin{tabular}{ l l l l l }
+    \begin{tabular}{ l l }
 	frequency (Hz) & $V_{out}$ (V) \\ \colrule
 	102000 & 1.76 \\
 	92590 & 1.84  \\
@@ -123,13 +132,31 @@ For part C of the lab the group built a high pass filter and amplifier circuit u
 
 
 \subsection{Calculations}
+The objective of the first part of the lab was to find the internal resistance of the protoboard AC voltage supply. To do this, the group measured the output directly and the output across a load. The group then used equation (1) to obtain the internal resistance of the voltage source.
+
+\begin{center}
+	\begin{ruledtabular}
+    \begin{tabular}{ l l l }
+	$V_{L}$ (V) & $R_{L}$ (k$\Omega$) & $R_{o}$ (k$\Omega$) \\ \colrule
+	3.64 & 22.23 & 0.73 \\
+	3.70 & 148.4 & 2.41 \\
+	1.04 & 0.2184 & 0.571 \\
+	3.68 & 82.1 & 1.78 \\
+\end{tabular}
+    \end{ruledtabular}
+\end{center}
+
+From these calculations of $R_{o}$ the average was calculated. $R_{o_{ave}}$ = 1.37k$\Omega$
+
+
+
 
 
 For Part C of the lab, the gain of the op amp unit is: gain = $\frac{V_{out}}{V_{in}}$ The calculated data for this part of the lab is shown below:
 
 \begin{center}
 	\begin{ruledtabular}
-    \begin{tabular}{ l l l l l }
+    \begin{tabular}{ l l }
 	frequency (Hz) & gain (dB) \\ \colrule
 	102000 & 4.91 \\
 	92590 & 5.30  \\
@@ -148,14 +175,26 @@ For Part C of the lab, the gain of the op amp unit is: gain = $\frac{V_{out}}{V_
 
 
 \subsection{Analysis}
+For part A the group obtained that $R_{o_{ave}}$ = 1.37k$\Omega$. This value is in the range of values obtained. It seems that the protoborad did not have the precsion to accurately measure the voltages to a degree which would allow the calculations to be consistant. With a better measurement device, the data would likely have been more precise.
 
-For part C of the lab the group built a high pass filter and amplifier circuit using the op amp. For this circuit, a bode plot can be made to shown the nature of the filter. This plot is shown below.
+Part B
 
-At the characteristic frequency, <WRC> the gain is <gain> which is what was expected. The plot demonstrates that the gain in dB is negative for the frequencies below $\omega_{RC}$ and is positive for frequencies above $\omega_{RC}$. This means that the low frequencies are filtered and the high frequencies are passed through the filter. THis is the exact nature expected for a high pass filter.
+For part C of the lab the group built a high pass filter and amplifier circuit using the op amp. For this circuit, a bode plot can be made to shown the nature of the filter. This plot is shown below:
+
+%MORGAN LOOK HERE!!!!!!
+\begin{figure}[h]
+    \includegraphics[scale=0.4]{bodeplot.png}  
+    \caption{}
+\end{figure}
+
+At the characteristic frequency, <WRC> the gain is <gain> which is what was expected. The plot demonstrates that the gain in dB is negative for the frequencies below $\omega_{RC}$ and is positive for frequencies above $\omega_{RC}$. This means that the low frequencies are filtered and the high frequencies are passed through the filter. This is the exact nature expected for a high pass filter.
 
 \section{Conclusion}
+Part A of the lab was successfully compelte as the internal resistance of the voltage source was calculated. None of the calculated values were very different from the average value. The lab could be improved with a better measurment device for the voltages and by taking more measurements using different load sizes.
 
+Part B 
 
+Part C of the lab was compeleted successfully as the group built an op amp circuit that showed the desired output. The group collected data that showed the nature of the circuit to be a high pass filter.
 
 
 \end{document}
