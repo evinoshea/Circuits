@@ -8,7 +8,7 @@
 \begin{document}
 
 
-\title{PHYS 605 Lab \#6} 
+\title{PHYS 605 Lab \#7} 
 
 \author{Morgan A. Daly}
 \author{Evin O'Shea}
@@ -22,7 +22,9 @@
 \subsection{Purpose}
 
 The goal of part A of the lab was to investigate the internal resistance of the protoboard's AC voltage supply. This was a good practice in measuring the output voltage and output impedance of a circuit. 
+
 Part A of the lab gave practice for part B of the lab which was to investigate the output impedance of an op amp circuit. In this case the circuit was an inverting amplifier with a gain of three. Along with output impedance, the limitations of possible loads and the affects of differentt resistor values in the op amp circuit.
+
 Part C of the lab was to build a different op amp circuit. The lab group chose to build a high pass filter and amplifier. This circuit's nature was investigated by measuring output voltage versus input frequency. The plot of this relationship will show the nature of the filter.
 
 \subsection{Background / Theory}
@@ -99,15 +101,60 @@ The input source was initially set to an amplitude of 2.64V and frequency 7.225H
 
 
 
+For part C of the lab the group built a high pass filter and amplifier circuit using the op amp. The input voltage used for this section was 1V peak-to-peak. The data recorded is shown below:
+
+\begin{center}
+	\begin{ruledtabular}
+    \begin{tabular}{ l l l l l }
+	frequency (Hz) & $V_{out}$ (V) \\ \colrule
+	102000 & 1.76 \\
+	92590 & 1.84  \\
+	58140 & 1.92 \\
+	2119 & 1.88 \\
+	1000 & 1.64 \\
+	735.3 & 1.46 \\
+	457.8 & 1.16 \\
+	102 & 0.324 \\
+	52.63 & 0.168 \\
+	10.75 & 0.044 \\
+\end{tabular}
+    \end{ruledtabular}
+\end{center}
+
+
+\subsection{Calculations}
+
+
+For Part C of the lab, the gain of the op amp unit is: gain = $\frac{V_{out}}{V_{in}}$ The calculated data for this part of the lab is shown below:
+
+\begin{center}
+	\begin{ruledtabular}
+    \begin{tabular}{ l l l l l }
+	frequency (Hz) & gain (dB) \\ \colrule
+	102000 & 4.91 \\
+	92590 & 5.30  \\
+	58140 & 5.67 \\
+	2119 & 5.48 \\
+	1000 & 4.30 \\
+	735.3 & 3.29 \\
+	457.8 & 1.29 \\
+	102 & -9.80 \\
+	52.63 & -15.5 \\
+	10.75 & -27.1 \\
+\end{tabular}
+    \end{ruledtabular}
+\end{center}
+
+
+
+\subsection{Analysis}
+
+For part C of the lab the group built a high pass filter and amplifier circuit using the op amp. For this circuit, a bode plot can be made to shown the nature of the filter. This plot is shown below.
+
+At the characteristic frequency, <WRC> the gain is <gain> which is what was expected. The plot demonstrates that the gain in dB is negative for the frequencies below $\omega_{RC}$ and is positive for frequencies above $\omega_{RC}$. This means that the low frequencies are filtered and the high frequencies are passed through the filter. THis is the exact nature expected for a high pass filter.
 
 \section{Conclusion}
-The first part of the lab was completed successfully as the group was able to demonstrate that a diode can be used to create close to half of a DC voltage supply. The group discovered that for higher frequency input voltages the plot was more flat on top and bottom. The correct properties of the diode were demonstrated in this part of the lab. When then 3V DC source was added, the results were accurate as the voltage varied between zero and the diode voltage. This is what would have been expected for input voltages below 3V. Results for voltages above 3V were not obtained. This could be done in future labs.
 
-A full wave rectifier was successfully constructed. Its behavior was as expected, creating an all positive voltage output by inverting the negative input voltage. 
-
-The Zener diode portion of the lab was also successful. The Zener voltage behavior was observed by measuring the output voltage while varying the DC input voltage. Then the clipping effect of the Zener diode on half of the waveform was observed by providing a single Zener diode with an AC voltage input. Then, using two diodes in opposite bias directions, the both the positive and negative output voltages were clipped.
-
-Overall, the lab was completed with a large degree of success.
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.19)  4 APR 2016 22:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.19)  6 APR 2016 15:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -251,14 +251,14 @@ Class revtex4 Warning: Assuming \noaffiliation for Morgan A. DalyEvin O'Shea.
 <output.png, id=1, 835.12pt x 726.715pt>
 File: output.png Graphic file (type png)
  <use output.png>
-Package pdftex.def Info: output.png used on input line 33.
+Package pdftex.def Info: output.png used on input line 35.
 (pdftex.def)             Requested size: 208.77948pt x 181.6783pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: File `inverting.png' not found on input line 48.
+LaTeX Warning: File `inverting.png' not found on input line 50.
 
 
 ! Package pdftex.def Error: File `inverting.png' not found.
@@ -267,12 +267,12 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.48 ...\includegraphics[scale=0.4]{inverting.png}
+l.50 ...\includegraphics[scale=0.4]{inverting.png}
                                                   
 ? 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./output.png>]
 
-LaTeX Warning: File `highpassamp.png' not found on input line 67.
+LaTeX Warning: File `highpassamp.png' not found on input line 69.
 
 
 ! Package pdftex.def Error: File `highpassamp.png' not found.
@@ -281,11 +281,11 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.67 ...ncludegraphics[scale=0.4]{highpassamp.png}
+l.69 ...ncludegraphics[scale=0.4]{highpassamp.png}
                                                   
 ? 
 
-LaTeX Warning: File `1800mV.png' not found on input line 96.
+LaTeX Warning: File `1800mV.png' not found on input line 98.
 
 
 ! Package pdftex.def Error: File `1800mV.png' not found.
@@ -294,33 +294,33 @@ See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.96     \includegraphics[scale=0.4]{1800mV.png}
+l.98     \includegraphics[scale=0.4]{1800mV.png}
                                                 
 ? 
-[2] (./phys605lab7.aux) ) 
+[2] [3] (./phys605lab7.aux) ) 
 Here is how much of TeX's memory you used:
  3653 strings out of 495028
  47470 string characters out of 6181496
- 135576 words of memory out of 5000000
+ 123576 words of memory out of 5000000
  6836 multiletter control sequences out of 15000+600000
  7794 words of font info for 29 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  37i,6n,23p,1085b,293s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmtt9.pfb>
-Output written on phys605lab7.pdf (2 pages, 172408 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmtt9.pfb>
+Output written on phys605lab7.pdf (3 pages, 173574 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
