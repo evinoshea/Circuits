@@ -73,7 +73,7 @@ gain =  -\frac{Z_{F}}{Z_{in}} \,
 where, $Z_{in} = R_{in} + C_{in}$. The magnitude of this gain will depend on the frequency of the input voltage. The filter will allow high frequency voltages to pass and low frequencies will have a gain of less than one. The characteristic frequency of an RC circuit is given by:
 
 \begin{equation}
-\omega_{RC} =  \frac{1}{R\omega}
+\omega_{RC} =  \frac{1}{R_{in}C_{in}}
 \end{equation}
 
 
@@ -132,7 +132,7 @@ The goal of the second part of the lab was to build and investigate an inverting
 
 The lab group also made a circuit with double the values for $R_{in}$ and $R_{F}$. For this part of the lab, $R_{in}$ = 9.811k$\Omega$, $R_{F}$ = 29.38k$\Omega$. For a measured $V_{in}$ = 1.00V yielded a $V_{out}$ = 2.947.
 
-For part C of the lab, the group built a high pass filter and amplifier circuit using the op amp. The input voltage used for this section was 1V peak-to-peak. The data recorded is shown below:
+For part C of the lab, the group built a high pass filter and amplifier circuit using the op amp. The input voltage used for this section was 1V peak-to-peak. It used a capacitor $C_{in}$=99nF and resistor $R_{in}$=2.183$k\Omega$. The $R_F$ was 4.428$k\Omega$. The data recorded is shown below:
 
 \begin{center}
 	\begin{ruledtabular}
@@ -182,8 +182,12 @@ $$R_{o} =  \frac{V_{R_{o}}}{I_{L}} = (3.02 - 2.97)\frac{22.22}{2.97} = 0.367k\Om
 
 When the resistor values were changed to $R_{in}$ = 9.811k$\Omega$ and $R_{F}$ = 29.38k$\Omega$ the expected gain of the circuit was -2.99. Since the actual gain was 2.95, the error in the gain was 1.44\%. 
 
-For Part C of the lab, the gain of the op amp unit is
-$$gain = \frac{V_{out}}{V_{in}} \, .$$
+For Part C of the lab, the gain of the op amp unit is 0 for very small $\omega$. The characteristic frequency was calculated using equation (4):
+$$ \omega_{RC} =  \frac{1}{(2183)(99.7\times10^{-9})}=4594.64 $$
+
+For $\omega >> \omega_{RC}$,
+$$gain = \frac{-4428}{2183} \, .$$
+Below is the gain calculated with equation (2) to compare:
 
 \begin{center}
 	\begin{ruledtabular}
@@ -221,15 +225,14 @@ For part C of the lab the group built a high pass filter and amplifier circuit u
     \caption{Bode plot of the high pass amplifier.}
 \end{figure}
 
-%put in WRC please!!! and add to this discussion
-At the characteristic frequency, <WRC> the gain is <gain> which is what was expected. The plot demonstrates that the gain in dB is negative for the frequencies below $\omega_{RC}$ and is positive for frequencies above $\omega_{RC}$. This means that the low frequencies are filtered and the high frequencies are passed through the filter. This is the exact nature expected for a high pass filter.
+At the characteristic frequency, 4594.64, the gain is approximately -3dB, which is what was expected. The plot demonstrates that the gain in dB is negative for the frequencies below $\omega_{RC}$. This means that the low frequencies are filtered and the high frequencies are passed through the filter. This is the exact nature expected for a high pass filter. An interesting aspect is the positive gain for higher frequencies. This is the result of the amplifying element of the circuit, not only passing through higher frequencies, but amplifying their voltage.
 
 \section{Conclusion}
 Part A of the lab was successfully completed, as the internal resistance of the voltage source was calculated. None of the calculated values were very different from the average value. The lab could be improved with a better measurement device for the voltages and by taking more measurements using different load sizes.
 
 The goal of Part B of the lab was to build and investigate the inverting amplifier. The group successfully obtained a gain of negative three with a low percent error in all cases. The group also showed that the circuit was limited to large loads as expected. The group also showed that changing the resistance values does not change the gain of the amplifier if the ratio is held constant. All of the goals of this section of the lab were completed successfully.
 
-Part C of the lab was completed successfully, as the group built an op amp circuit that showed the desired output. The group collected data that showed the nature of the circuit to be a high pass filter.
+Part C of the lab was completed successfully, as the group built an op amp circuit that showed the desired output. The group collected data that showed the nature of the circuit to be a high pass filter, as well as an amplifier.
 
 
 \end{document}
