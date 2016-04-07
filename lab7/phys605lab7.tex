@@ -21,73 +21,79 @@
 \section{Introduction and Theory}
 \subsection{Purpose}
 
-The goal of part A of the lab was to investigate the internal resistance of the protoboard's AC voltage supply. This was a good practice in measuring the output voltage and output impedance of a circuit. 
+The goal of part A of the lab was to investigate the internal resistance of the ProtoBoard's AC voltage supply. This improved understanding of output voltage and output impedance of a circuit. 
 
-Part A of the lab gave practice for part B of the lab which was to investigate the output impedance of an op amp circuit. In this case the circuit was an inverting amplifier with a gain of negative three. Along with output impedance, the limitations of possible loads and the affects of differentt resistor values in the op amp circuit.
+Part B of the lab involved investigating the output impedance of an operational amplifier circuit. In this case the circuit was an inverting amplifier with a gain of -3. The design and testing of the circuit required an understanding of the limitations of the amplifier and the effect that a change in any of the resistor values might have, including adding a load.
 
-Part C of the lab was to build a different op amp circuit. The lab group chose to build a high pass filter and amplifier. This circuit's nature was investigated by measuring output voltage versus input frequency. The plot of this relationship will show the nature of the filter.
+Part C of the lab was to build another operational amplifier circuit. The circuit's behavior was investigated by measuring output voltage while varying input frequency. 
 
 \subsection{Background / Theory}
 
-Output impedance and voltage of a circuit is important to know. When a voltage is being supplied from an active circuit to a load, the output impedance can tell a lot about the limitations of the loads that can be used. If the output impedance of a passive circuit is much higher than the impedance of the circuit load, then sag can occur. This will mean that the circuit will not work as desired. The magnitude of the output impedance of a circuit can be measured by measuring the ouput voltage of a circuit with no load, and then measuring the ouput voltage with a load. The voltage of the source is measured when the output voltage is measured without the load. When the load is applied, knowing the load resisitance and the voltage across the load will give the current. This information can be used to give the output resistance from the equation:
+The magnitude of the output impedance of a circuit, $R_0$ can be found by measuring the output voltage of a circuit with no load, $V_0$, and then measuring the output voltage with a load, $V_L$. 
+The voltage of the source is measured when the output voltage is measured without the load. 
+When the load is applied, the current can be calculated using the load resistance and the voltage across the load. This can be  used to calculate the output impedance.
 
 \begin{equation}
-R_{o} =  \frac{V_{R_{o}}}{I_{L}} = (V_{o} - V_{L})\frac{R_{L}}{V_{L}}
+R_{0} =  \frac{V_{R_{0}}}{I_{L}} = (V_{0} - V_{L})\frac{R_{L}}{V_{L}}
 \end{equation}
 
-A diagram of the circuit used to make measurements that will allow the norton current to be calculated is shown below:
+The output impedance and voltage of a circuit can help determine other aspects of the circuits behavior. 
+% ACTIVE VS PASSIVE CIRCUIT??
+When a voltage is being supplied from an active circuit to a load, the output impedance can tell a lot about the limitations of the loads that can be used. 
+If the output impedance of a passive circuit is much higher than the impedance of the circuit load, then sag can occur. This is usually something that should be avoided.
 
 \begin{figure}[h]
     \includegraphics[scale=0.25]{output.png}  
-    \caption{This circuit is designed to discover the norton current with can give rise to $R_{o}$ if $V_{o}$ is measured separately.}
+    \caption{A circuit that can be used to take measurements in order to calculate the Norton current. If $V_0$ is measured separately, this can be used to find $R_0$.}
 \end{figure}
 
-This type of measurement can be made on any circuit. For the second part of the lab, the same set up can be used where $V_{o}$ and $R_{o}$ are the output voltage and output impedance of the circuit created for the second part of the lab.
+This type of measurement can be made on other types of circuits. For the second part of the lab, the same set up can be used where $V_{o}$ and $R_{o}$ are the output voltage and output impedance of the circuit created for the second part of the lab.
 
-Op amps are acitve circuit elements that can be used in a multitude of ways. The most important property of an op amp is that the positive and negative terminals of the op amp will be equal. This means that since the positive terminal is grounded, the voltage of the positive and negative terminal will both be zero. This means that $\frac{V_{in}}{R_{in}} = -\frac{V_{out}}{R_{F}}$. Given the definition of the gain we obtain:
+Operational amplifiers are active circuit elements that can be used in a multitude of ways. An important property of the "op amp" is that its positive and negative terminals will be equal in potential. As a result, when the positive terminal is grounded, the voltage of both terminals will be zero. This implies that $\frac{V_{in}}{R_{in}} = -\frac{V_{out}}{R_{F}}$. The relationship can also be used to calculate the gain:
 
 \begin{equation}
 gain =  \frac{V_{out}}{V_{in}} = -\frac{R_{F}}{R_{in}}
 \end{equation}
 
-The invertive amplifier built for this lab is shown below:
 
 \begin{figure}[h]
     \includegraphics[scale=0.3]{inverting.png}  
-    \caption{This circuit is both a high pass filter and an amplifer.}
+    \caption{Diagram of an inverting amplifier.}
 \end{figure}
 
-For the third part of the lab, a high pass filter and amplifer was made with the op amp. This circuit is shown below. This circuit is a high pass filter because the capacitor only allows high freqency voltages to pass through. In a DC circuit, a capacitor will simply be charged and no current will flow after. In an AC cuircuit, changes in the voltage across the capacitor on one side will cause changes in voltage on the other side. This will allow the AC current to flow through the capacitor. Since the capacitor responds to changes in voltage, higher freqency voltages will pass through the circuit mor easily than low frequency voltages. This is the reason that a circuit in this situation will act as a high pass filter. In this circuit, since there is a negative feedback, the postivie and negative terminals of the op amp will have an equal voiltage. Again, since the positive terminal is grounded, the voltage of the positive and negative terminal will both be zero. Again the gain of this circuit will be determined by:
+It is also possible to combine a filter with an amplifier, as shown in figure (3). The circuit depicted is a high pass filter, as only high frequency voltages are able to pass through. In a DC circuit, a capacitor would not let current flow after it is charged. In an AC circuit, the change in the voltage on one side of the capacitor will cause change in voltage on the other side, allowing the AC current to continue to flow. 
+Since the capacitor responds to changes in voltage, higher frequency voltages will pass through the circuit more easily than low frequency voltages. 
+%???
+In this circuit there is a negative feedback, so the positive and negative terminals of the op amp will have an equal voltage. Because the positive terminal is grounded, the voltage of both terminals will both be 0V. The gain of this circuit will be determined by
 
 \begin{equation}
-gain =  -\frac{Z_{F}}{Z_{in}}
+gain =  -\frac{Z_{F}}{Z_{in}} \,
 \end{equation}
 
-This time however, these are complex imedances. In this case, $Z_{in} = R_{in} + C_{in}$. The magnitude of this gain will depend on the frequency of the input voltage. The filter will allow high frequency voltages to pass and low frequencies will have a gain of less than one. The characteristic frequency of an RC circuit is given below:
+where, $Z_{in} = R_{in} + C_{in}$. The magnitude of this gain will depend on the frequency of the input voltage. The filter will allow high frequency voltages to pass and low frequencies will have a gain of less than one. The characteristic frequency of an RC circuit is given by:
 
 \begin{equation}
 \omega_{RC} =  \frac{1}{R\omega}
 \end{equation}
 
- The op amp circuit built for this part of the lab is shown below:
 
 \begin{figure}[h]
     \includegraphics[scale=0.3]{highpassamp.png}  
-    \caption{This circuit is both a high pass filter and an amplifer.}
+    \caption{This circuit acts as both a high pass filter and an amplifier.}
 \end{figure}
 
 
 \section{Methodology}
 
 \begin{enumerate}
-    \item Connect the oscilloscope directly to the Protoboard AC voltage supply and mneasure the output voltage.
+    \item Connect the oscilloscope directly to the ProtoBoard's AC voltage supply and measure the output voltage.
     \item Set up the circuit shown in figure (1) record the voltage across the resistor and record the resistor value
     \item Build the op amp circuit from figure (2).
-    \item Take record of the output voltage with no load attatched.
-    \item Add a load to the circuit with a large value as to emilinate sag.
+    \item Take record of the output voltage with no load attached.
+    \item Add a load to the circuit with a large value as to eliminate sag.
     \item Measure the voltage across the load resistor and the value of this resistor.
     \item Change the frequency and take nots on any changes in the plot on the oscilloscope.
-    \item Change the load resistor and investigate the limitations fo the circuit.
+    \item Change the load resistor and investigate the limitations of the circuit.
     \item Build the circuit from figure (3).
     \item Take recordings of output voltage as the frequency is varied and the input voltage is kept constant.
 \end{enumerate}
@@ -96,7 +102,7 @@ This time however, these are complex imedances. In this case, $Z_{in} = R_{in} +
 \section{Results and Analysis}
 
 \subsection{Data}
-The goal of part A of the lab was to make measurements to calculate the internal resisitance of the AC voltage source on the protoboard. The data collected for this sectionm is shown below:
+The goal of part A of the lab was to make measurements to calculate the internal resistance of the AC voltage source on the ProtoBoard. 
 
 \begin{center}
 	\begin{ruledtabular}
@@ -110,9 +116,7 @@ The goal of part A of the lab was to make measurements to calculate the internal
     \end{ruledtabular}
 \end{center}
 
-The goal of the second part of the lab was to build and investigate an inverting amplifier op amp circuit. For this part of the lab the goal was to obtain a gain of -3. The $R_{in}$ used was 4.912k$\Omega$ and the $R_{F}$ used was 14.62k$\Omega$.
-
-Data for part B of the lab is shown below:
+The goal of the second part of the lab was to build and investigate an inverting amplifier circuit. The $R_{in}$ used was 4.912k$\Omega$ and the $R_{F}$ used was 14.62k$\Omega$.
 
 \begin{center}
 	\begin{ruledtabular}
@@ -126,9 +130,9 @@ Data for part B of the lab is shown below:
     \end{ruledtabular}
 \end{center}
 
-The lab group also made a circuit with double the values for $R_{in}$ and $R_{F}$. For this part of the lab $R_{in}$ = 9.811k$\Omega$, $R_{F}$ = 29.38k$\Omega$. The gain given from equation (2) is -2.99. For a measured $V_{in}$ = 1.0V yielded a $V_{out}$ = 2.947.
+The lab group also made a circuit with double the values for $R_{in}$ and $R_{F}$. For this part of the lab, $R_{in}$ = 9.811k$\Omega$, $R_{F}$ = 29.38k$\Omega$. For a measured $V_{in}$ = 1.00V yielded a $V_{out}$ = 2.947.
 
-For part C of the lab the group built a high pass filter and amplifier circuit using the op amp. The input voltage used for this section was 1V peak-to-peak. The data recorded is shown below:
+For part C of the lab, the group built a high pass filter and amplifier circuit using the op amp. The input voltage used for this section was 1V peak-to-peak. The data recorded is shown below:
 
 \begin{center}
 	\begin{ruledtabular}
@@ -150,7 +154,10 @@ For part C of the lab the group built a high pass filter and amplifier circuit u
 
 
 \subsection{Calculations}
-The objective of the first part of the lab was to find the internal resistance of the protoboard AC voltage supply. To do this, the group measured the output directly and the output across a load. The group then used equation (1) to obtain the internal resistance of the voltage source.
+
+The objective of the first part of the lab was to find the internal resistance of the ProtoBoard AC voltage supply. To do this, the group measured the output directly and the output across a load. The group then used equation (1) to obtain the internal resistance of the voltage source.
+$$R_{0} = (3.76 - 3.64)\frac{22.23}{3.36}=0.73$$
+
 
 \begin{center}
 	\begin{ruledtabular}
@@ -164,15 +171,19 @@ The objective of the first part of the lab was to find the internal resistance o
     \end{ruledtabular}
 \end{center}
 
-From these calculations of $R_{o}$ the average was calculated. $R_{o_{ave}}$ = 1.37k$\Omega$
+From these calculations of $R_{0}$ the average was calculated. 
+$$R_{0_{ave}} = 1.37k\Omega$$
 
-Since $R_{in}$ = 4.912k$\Omega$ and $R_{F}$ = 14.62k$\Omega$, the ratio given from equation (2) for these values is -2.98. When no load was applied, for a $V_{in}$ = 1.0V, an output of $V_{out}$ = 3.02V with an inverted signal was obtained. This is a 1.34\% error on the magnitude of the gain. When a 22.22k$\Omega$ load was added, the output voltage for a $V_{in}$ = 1.0V was $V_{out}$ = 2.97V with an inverted signal. This is a 0.33\% error in the gain. The output resistance can be calculated for this circuit using equation (1) as in part A of the lab. In this case: $V_{o}$ = 3.02V, $V_{L}$ = 2.97V, $R_{L}$ = 22.22k$\Omega$. The result from applying equation (1) yields: 
+For part B, the gain was calculated using equation (2). 
+$$gain = -\frac{14620}{4912} = -2.98$$
+When no load was applied, for a $V_{in}$ = 1.0V, an output of $V_{out}$ = 3.02V with an inverted signal was obtained. This is a 1.34\% error on the magnitude of the gain. When a 22.22k$\Omega$ load was added, the output voltage for a $V_{in}$ = 1.0V was $V_{out}$ = 2.97V with an inverted signal. This gives a 0.33\% error in the gain. The output resistance can be calculated for this circuit using equation (1), as in part A of the lab. In this case: $V_{o}$ = 3.02V, $V_{L}$ = 2.97V, $R_{L}$ = 22.22k$\Omega$. The result from applying equation (1) yields: 
 
-$R_{o} =  \frac{V_{R_{o}}}{I_{L}} = (3.02 - 2.97)\frac{22.22}{2.97} = 0.367k\Omega$
+$$R_{o} =  \frac{V_{R_{o}}}{I_{L}} = (3.02 - 2.97)\frac{22.22}{2.97} = 0.367k\Omega$$
 
-When the resistor values were changed to $R_{in}$ = 9.811k$\Omega$ and $R_{F}$ = 29.38k$\Omega$ the expected gain of the circuit was -2.99. Since the acutal gain was 2.95, the error in the gain was 1.44\%. 
+When the resistor values were changed to $R_{in}$ = 9.811k$\Omega$ and $R_{F}$ = 29.38k$\Omega$ the expected gain of the circuit was -2.99. Since the actual gain was 2.95, the error in the gain was 1.44\%. 
 
-For Part C of the lab, the gain of the op amp unit is: gain = $\frac{V_{out}}{V_{in}}$ The calculated data for this part of the lab is shown below:
+For Part C of the lab, the gain of the op amp unit is
+$$gain = \frac{V_{out}}{V_{in}} \, .$$
 
 \begin{center}
 	\begin{ruledtabular}
@@ -195,31 +206,30 @@ For Part C of the lab, the gain of the op amp unit is: gain = $\frac{V_{out}}{V_
 
 
 \subsection{Analysis}
-For part A the group obtained that $R_{o_{ave}}$ = 1.37k$\Omega$. This value is in the range of values obtained. It seems that the protoborad did not have the precsion to accurately measure the voltages to a degree which would allow the calculations to be consistant. With a better measurement device, the data would likely have been more precise.
+For part A, the group found that $R_{0_{ave}}$ = 1.37k$\Omega$. This value is in the range of values obtained. It seems as though the ProtoBoard did not have the precision to accurately measure the voltages to a degree which would allow the calculations to be consistent. With a better measurement device, the data would likely have been more precise.
 
 The goal of part B of the lab was to build an inverting amplifier with a gain of -3. When the group initially built the circuit, $R_{in}$ = 4.912k$\Omega$ and $R_{F}$ = 14.62k$\Omega$. This gave an expected gain of -2.98. The gain obtained was -3.02. This is a 1.34\% error on the magnitude of the gain. When a load of 22.22k$\Omega$ was added, the gain was 2.97. This is a 0.33\% error. This demonstrates that the inverting amplifier achieved the goal of a gain of -3. 
 
-The lab group then was to investigate the limitations on the load values. Since the output was measured with the oscilloscope attatched and no load and there were nor problems, it means that the circuit could handle very large load. When a load of 47.5$\Omega$ was added, the output voltage was capped. This meant that the load resistance was too low and this was causing sag. This means that this circuit is limited to large loads. 
+The lab group then investigated the limitations on the load values. Since the output was measured with the oscilloscope attached and no load and there were no problems, it means that the circuit could handle very large loads. When a load of 47.5$\Omega$ was added, the output voltage was capped. This meant that the load resistance was too low and this was causing sag. The circuit is limited to large loads. 
 
-The lab group then investigated what changing the resistance values does to the circuit if the ratio is maintained. For this part of the lab the group doubled the resistance values to $R_{in}$ = 9.811k$\Omega$ and $R_{F}$ = 29.38k$\Omega$. The expected gain for this circuit was -2.99. The gain calculated from measurements was -2.95. This is a percent error of only 1.44\%. This shows that changing the resistance values does not change the gain of the circuit. WHat does change is the power consumption by the circuit.
+The lab group then investigated what changing the resistance values does to the circuit if the ratio between them is maintained. For this part of the lab the group doubled the resistance values to $R_{in}$ = 9.811k$\Omega$ and $R_{F}$ = 29.38k$\Omega$. The expected gain for this circuit was -2.99. The gain calculated from measurements was -2.95. This is a percent error of  1.44\%. The minimal amount of error shows that changing the resistance values does not change the gain of the circuit. It was noted that increasing the resistance this way will increase the power consumption of the circuit.
 
-For part C of the lab the group built a high pass filter and amplifier circuit using the op amp. For this circuit, a bode plot can be made to shown the nature of the filter. This plot is shown below:
+For part C of the lab the group built a high pass filter and amplifier circuit using the op amp. For this circuit, a Bode plot was constructed to illustrate the circuit behavior.
 
-%MORGAN LOOK HERE!!!!!!
 \begin{figure}[h]
-    \includegraphics[scale=0.4]{bodeplot.png}  
-    \caption{}
+    \includegraphics[scale=0.15]{bode_plot.jpg}  
+    \caption{Bode plot of the high pass amplifier.}
 \end{figure}
 
 %put in WRC please!!! and add to this discussion
 At the characteristic frequency, <WRC> the gain is <gain> which is what was expected. The plot demonstrates that the gain in dB is negative for the frequencies below $\omega_{RC}$ and is positive for frequencies above $\omega_{RC}$. This means that the low frequencies are filtered and the high frequencies are passed through the filter. This is the exact nature expected for a high pass filter.
 
 \section{Conclusion}
-Part A of the lab was successfully compelte as the internal resistance of the voltage source was calculated. None of the calculated values were very different from the average value. The lab could be improved with a better measurment device for the voltages and by taking more measurements using different load sizes.
+Part A of the lab was successfully completed, as the internal resistance of the voltage source was calculated. None of the calculated values were very different from the average value. The lab could be improved with a better measurement device for the voltages and by taking more measurements using different load sizes.
 
-The goal of Part B of the lab was to build and investigate the inverting amplifier. The group successfully obtained a gain of negative three with a low percent error in all cases. The group also showed that the circuit was limited to large loads as expected. The group also showed that changing the resistance values does not change the gain of the amplifier if the ratio is held constant. All of the goals of thsi section of the lab were completed successfully.
+The goal of Part B of the lab was to build and investigate the inverting amplifier. The group successfully obtained a gain of negative three with a low percent error in all cases. The group also showed that the circuit was limited to large loads as expected. The group also showed that changing the resistance values does not change the gain of the amplifier if the ratio is held constant. All of the goals of this section of the lab were completed successfully.
 
-Part C of the lab was compeleted successfully as the group built an op amp circuit that showed the desired output. The group collected data that showed the nature of the circuit to be a high pass filter.
+Part C of the lab was completed successfully, as the group built an op amp circuit that showed the desired output. The group collected data that showed the nature of the circuit to be a high pass filter.
 
 
 \end{document}
