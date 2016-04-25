@@ -20,7 +20,7 @@
 
 \section{Introduction and Theory}
 \subsection{Purpose}
-intro:
+
 This lab focused on working with digital ciurcuits. The two digital compontents used were the 555 timer and the nand gate. 
 
 The goal of the first part of the lab was to demonstrate how nand gates work and how they can be used in various ways to create more interesting opertations by combining nand gates. 
@@ -31,31 +31,40 @@ the second part of the lab focusxed on the 555 timer. for this part of the lab, 
 \subsection{Background / Theory}
 
 
-BG/theory 
-Digital circuits consist of different high square pulses that can be catagorized as one of two states: high or low; 1 or 0. This type of circuitry is used in a lot of technology because it can send encoded data without error. The error is reduced, because a low andf high pulse can be easily distinguisehed even if there is noise in the signal. THis means that the data is only limited by the number of pulses sent.
+
+Digital circuits consist of different high square pulses that can be catagorized as one of two states: high or low; 1 or 0. This type of circuitry is used in a lot of technology because it can send encoded data without error. The error is reduced, because a low andf high pulse can be easily distinguisehed even if there is noise in the signal. This means that the data is only limited by the number of pulses sent.
 
 In the lab, the gropup used LED's to get a visual feedback on the output of the circuit. 
 LED's require a minimum voltage across them to light up. This is perfect for digital circuits as the high voltage is over the diode voltage and the low is below it. This means that the LED on is a high coming through and the LED off is as low comming through.
 
+
+
 \begin{figure}[h]
-    \includegraphics[scale=0.3]{something.png}  
+    \includegraphics[scale=0.3]{NAND.png}  
     \caption{}
 \end{figure}
 
 
+The resistors used inb this part of the lab were chosen to restrict the current supplied to the NAND gates. Since the supply voltage was 5V, 10k$\Omega$ resistors were used to obtain a 0.5mA current. This is in the rating range of the NAND gates. %something? blah blah sound better etc etc so on and so forth
+
+
+
+
+\begin{figure}[h]
+    \includegraphics[scale=0.3]{555.png}  
+    \caption{}
+\end{figure}
+
 \section{Methodology}
 
+%CHECK FIGURE #'s HERE
 \begin{enumerate}
-    \item Connect the oscilloscope directly to the ProtoBoard's AC voltage supply and measure the output voltage.
-    \item Set up the circuit shown in figure (1) record the voltage across the resistor and record the resistor value
-    \item Build the op amp circuit from figure (2).
-    \item Take record of the output voltage with no load attached.
-    \item Add a load to the circuit with a large value as to eliminate sag.
-    \item Measure the voltage across the load resistor and the value of this resistor.
-    \item Change the frequency and take nots on any changes in the plot on the oscilloscope.
-    \item Change the load resistor and investigate the limitations of the circuit.
-    \item Build the circuit from figure (3).
-    \item Take recordings of output voltage as the frequency is varied and the input voltage is kept constant.
+    \item Set the circuit up as shown in figure (1). 
+    \item Use the switches to change the input coming in and check that the outout is as expected.
+    \item Select/calculate values of R$_1$, R$_2$, and C such that the output of the 555 timer will be 2 Hz.
+    \item Build the circuit as shown in figure (2).
+    \item Test the output of the 555 timer and make sure that it is as expected.
+    \item Record the outpuit frequency of the 555 timer.
 \end{enumerate}
 
 
