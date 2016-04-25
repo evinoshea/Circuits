@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.19)  25 APR 2016 15:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.19)  25 APR 2016 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -165,7 +165,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
-No file phys605lab8.aux.
+(./phys605lab8.aux)
 \openout1 = `phys605lab8.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -183,6 +183,7 @@ LaTeX Font Info:    ... okay on input line 8.
 Class revtex4 Info: Patching LaTeX tabular. on input line 8.
 Class revtex4 Info: cite was not loaded (OK!) on input line 8.
 Class revtex4 Info: multicol was not loaded (OK!) on input line 8.
+
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count106
@@ -248,97 +249,43 @@ e
 Class revtex4 Warning: Assuming \noaffiliation for Morgan A. DalyEvin O'Shea.
 
 
-LaTeX Warning: File `output.png' not found on input line 46.
+LaTeX Warning: File `something.png' not found on input line 41.
 
 
-! Package pdftex.def Error: File `output.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.46     \includegraphics[scale=0.25]{output.png}
-                                                 
-? 
-
-LaTeX Warning: File `inverting.png' not found on input line 60.
-
-
-! Package pdftex.def Error: File `inverting.png' not found.
+! Package pdftex.def Error: File `something.png' not found.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.60 ...\includegraphics[scale=0.3]{inverting.png}
+l.41 ...\includegraphics[scale=0.3]{something.png}
                                                   
 ? 
-
-LaTeX Warning: File `highpassamp.png' not found on input line 81.
-
-
-! Package pdftex.def Error: File `highpassamp.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.81 ...ncludegraphics[scale=0.3]{highpassamp.png}
-                                                  
-? 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 90.
-
-[2]
-
-LaTeX Warning: File `bode_plot.jpg' not found on input line 224.
-
-
-! Package pdftex.def Error: File `bode_plot.jpg' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.224 ...ncludegraphics[scale=0.15]{bode_plot.jpg}
-                                                  
-? 
-[3] [4] (./phys605lab8.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
-
-
- ) 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./phys605lab8.aux) 
+) 
 Here is how much of TeX's memory you used:
- 3650 strings out of 495028
- 47400 string characters out of 6181496
- 126556 words of memory out of 5000000
- 6834 multiletter control sequences out of 15000+600000
- 7794 words of font info for 29 fonts, out of 8000000 for 9000
+ 3634 strings out of 495028
+ 47263 string characters out of 6181496
+ 123576 words of memory out of 5000000
+ 6825 multiletter control sequences out of 15000+600000
+ 5818 words of font info for 22 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,5n,23p,617b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on phys605lab8.pdf (4 pages, 158436 bytes).
+ 37i,5n,23p,433b,248s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on phys605lab8.pdf (2 pages, 129682 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 59 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
