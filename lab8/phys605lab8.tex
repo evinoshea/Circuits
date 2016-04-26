@@ -24,7 +24,7 @@
 This lab focused on working with digital ciurcuits. The two digital compontents used were the 555 timer and the nand gate. 
 
 The goal of the first part of the lab was to demonstrate how nand gates work and how they can be used in various ways to create more interesting opertations by combining nand gates. 
-the second part of the lab focusxed on the 555 timer. for this part of the lab, they design of the circuit would give a visual queue depending on the output of the 555 timer to demonstrate what the outputwas.
+the second part of the lab focused on the 555 timer. for this part of the lab, they design of the circuit would give a visual queue depending on the output of the 555 timer to demonstrate what the outputwas.
 
 
 
@@ -37,7 +37,7 @@ Digital circuits consist of different high square pulses that can be catagorized
 In the lab, the gropup used LED's to get a visual feedback on the output of the circuit. 
 LED's require a minimum voltage across them to light up. This is perfect for digital circuits as the high voltage is over the diode voltage and the low is below it. This means that the LED on is a high coming through and the LED off is as low comming through.
 
-The NAND gate performs the logical operator of "not and". The truth table for this gate is shown below:
+The NAND gate performs the logical operator of ``not and". The truth table for this gate is shown below:
 
 \begin{center}
 	\begin{ruledtabular}
@@ -63,7 +63,7 @@ However, when the inputs are tied together, there are only two cases. This truth
     \end{ruledtabular}
 \end{center}
 
-This means that when the inputs are tied together, the NAND gate actually just inverts the signal. The three NAND gates combined in the lab together have their own truth table. For this, we have to consider thatthe two inputs to the first two NAND gates will be inverted. Then, the final NAND gate will take "not and" as shown by the first truth table aboove. However, since these two inputs are inverted, the opposite of each IN will corespond to the same OUT. THe truth table shown below is the equivalent truth table for the three gates:
+This means that when the inputs are tied together, the NAND gate actually just inverts the signal. The three NAND gates combined in the lab together have their own truth table. For this, we have to consider thatthe two inputs to the first two NAND gates will be inverted. Then, the final NAND gate will take ``not and" as shown by the first truth table aboove. However, since these two inputs are inverted, the opposite of each IN will corespond to the same OUT. THe truth table shown below is the equivalent truth table for the three gates:
 
 \begin{center}
 	\begin{ruledtabular}
@@ -77,12 +77,12 @@ This means that when the inputs are tied together, the NAND gate actually just i
     \end{ruledtabular}
 \end{center}
 
-This truth table is equivalent to the truth table of an OR gate. This means the equivalent logical operation for these three gates is "OR".
+This truth table is equivalent to the truth table of an OR gate. This means the equivalent logical operation for these three gates is ``OR".
 
 
 \begin{figure}[h]
     \includegraphics[scale=0.25]{NAND.png}  
-    \caption{}
+    \caption{Three combined NAND gates that yields an OR gate.}
 \end{figure}
 
 
@@ -93,7 +93,7 @@ The resistors used inb this part of the lab were chosen to restrict the current 
 
 \begin{figure}[h]
     \includegraphics[scale=0.35]{555.png}  
-    \caption{}
+    \caption{The 555 timer circuit built for the lab.}
 \end{figure}
 
 \section{Methodology}
@@ -144,11 +144,11 @@ For part A of the lab, there are no calculations to be made. All of the circuitr
 For part B of the lab, the expected output frequency could be calculated. %HERE NEED TO Know which one is for this section
 Using equation (1), the expected output of the 555 timer was:
 
-f$_{expected}$ = $\frac{1.4}{C(2R_a + R_b)}$ = $\frac{1.4}{0.947x10^{-6}(2(677x10^3) + 35.18x10^3}$ = 1.98 Hz
+f$_{expected}$ = $\frac{1.4}{C(R_a + 2R_b)}$ = $\frac{1.4}{0.947\times 10^{-6}(2(677\times 10^3) + 35.18\times 10^3}$ = 1.98 Hz
 
 This means that the percent error for expected versus actual output frequency can be calculated. This is shown below:
 
-\%error = $\frac{f_{out} - f_{expected}}{f_{expected}}$x100 = $\frac{1.992 - 1.98}{1.98}$x100 = 0.704\%
+\%error = $\frac{f_{out} - f_{expected}}{f_{expected}}\times$100 = $\frac{1.992 - 1.98}{1.98}\times$100 = 0.704\%
 
 \subsection{Analysis}
 For part A of the lab, the logic gates operated as expected. The working of the circuit was explained in the background. Since the circuit was digital, the output does not have error, only correct or incorrect output.
