@@ -25,12 +25,12 @@ This lab used the concepts of digital logic to solve a ``real world" problem.
 
 First, a circuit involving NAND gates was constructed based on a schematic diagram provided. The goal was to demonstrate the behavior of NAND gates, and to generate a truth table for the circuit.
 
-The next objective was to build a circuit that drives LED's so that they light in an alternating pattern (like lights on a school bus) using a 555 timer and NAND gates.
+The next objective was to build a circuit that drives LED's so that they light in an alternating pattern (like lights on a school bus) using a 555 timer and a NAND gate.
 
 
 \subsection{Background / Theory}
 
-Digital circuits consist of different high square pulses that can be categorized as one of two states: high or low, 1 or 0. This type of circuitry is often used in technology because it can send encoded data without error. The error is reduced, because a low and high pulse can be easily distinguished even with noise in the signal. This means that the data is only limited by the number of pulses sent.
+Digital circuits consist of different height square pulses that can be categorized as one of two states: high or low, 1 or 0. This type of circuitry is often used in technology because it can send encoded data without error. The error is reduced because a low and high pulse can be easily distinguished even with noise in the signal. This means that the data is only limited by the number of pulses sent.
 
 In the lab, the group used LED's to get a visual feedback on the output of the circuits. 
 LED's require a minimum voltage across them to light up. This works well in digital circuits, as the high voltage is over the diode voltage and the low is below it. This means that the LED on is a high coming through and the LED off is as low coming through.
@@ -88,7 +88,7 @@ This truth table is equivalent to the truth table of an OR gate. This means the 
 
 Resistors can be used to restrict the current supplied to the NAND gates. The supply voltage in the circuit shown in figure (1) was 5V, so 10k$\Omega$ resistors would result in a 0.5mA current.
 
-A 555 times is a device which produces timing pulses. A 555 timer can be used to light LEDs alternately; the schematic for this is shown in figure (2). The frequency of these pulses depend on the resistor values, $R_a$ and $R_b$, and capacitor value, $C$.
+A 555 timer is a device which produces timing pulses. A 555 timer can be used to light LEDs alternately; the schematic for this is shown in figure (2). The frequency of these pulses depend on the resistor values, $R_a$ and $R_b$, and capacitor value, $C$.
 
 \begin{equation}
 f = \frac{1.4}{C(R_a + 2R_b)}
@@ -167,7 +167,7 @@ error &= \frac{f_{out} - f_{expected}}{f_{expected}}\times100 = \frac{1.992 - 1.
 
 The NAND gates operated as expected in the first circuit built. The behavior of the circuit was explained in the background. Since the circuit was digital, the output does not have error, only correct or incorrect output.
 
-For part B of the lab, the only data collected was the output frequency of the 555 timer. The output frequency only varied from the expected frequency by 0.704\%. Because the percent error was very low, it means the measurements were done accurately and the circuit was built correctly.
+The frequency of the flashing lights in the second part of lab was within an expected range. The output frequency only varied from the expected frequency by 0.704\%. Because the percent error was very low, it means the measurements were done accurately and the circuit was built correctly.
 
 
 \section{Conclusion}
