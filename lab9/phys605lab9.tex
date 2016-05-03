@@ -47,14 +47,21 @@ The output of the set-reset flip-flop is low when S=0 and R=1, and high when S=1
     \end{ruledtabular}
 \end{center}
 
+ 
+
+\begin{figure}[h]
+    \includegraphics[scale=0.25]{555.png}  
+    \caption{The schematic of the 555 timer built for the lab.}
+\end{figure}
+
 A 555 timer is a device which produces timing pulses. The frequency of these pulses depend on the resistor values, $R_a$ and $R_b$, and capacitor value, $C$.
 
 \begin{equation}
 f = \frac{1.4}{C(R_a + 2R_b)}
 \end{equation}
 
-A D flip-flop, shown in figure (2), takes the data line at its D terminal, and a clock input at the CLK terminal as input. Internally, it is made up of two gated set-reset flip-flops. These gates enable the SR flip-flop only when E is high. In the D flip-flop, the clock input is what is connected to the second E, and the first takes E after it has gone through an inverter. This means that when the clock is low, the first SR flip-flop is enabled, and when the clock is high, the second SR flip-flop is enabled. 
-The data line should be bits, so the D input will be either low or high. S1 takes D directly, and R1 takes D after it is inverted. This means that its output will always be 0 at one terminal and 1 at the other (as its terminals are ``Q" and ``not Q"). This means that the inputs to the second SR flip-flop will also be 0 at one terminal and 1 at the other. This is important because it ensures that the output of the SR flip-flops will be reasonable.
+A D flip-flop, shown in figure (2), takes the data line at its D terminal, and a clock input at the CLK terminal. Internally, it is made up of two gated set-reset flip-flops. These gates enable the SR flip-flop only when E is high. In the D flip-flop, the clock input is what is connected to the second E, and the first takes E after it has gone through an inverter. This means that when the clock is low, the first SR flip-flop is enabled, and when the clock is high, the second SR flip-flop is enabled. 
+The data line should be bits, so the D input will be either low or high. S1 takes D directly, and R1 takes D after it is inverted. This means that its output will always be 0 at one terminal and 1 at the other (as its terminals are ``Q" and ``not Q"). This means that the inputs to the second SR flip-flop will also be 0 at one terminal and 1 at the other. This is important because it ensures that the output of the SR flip-flops will have predictable output.
 
 \begin{figure}[h]
     \includegraphics[scale=0.45]{dflipflop}  
@@ -73,7 +80,7 @@ The data line should be bits, so the D input will be either low or high. S1 take
 
 A shift resistor is a circuit that propagates bits in support of memory management. It takes data in at one terminal, and shifts one bit on each clock pulse that is input to the other terminal. It is constructed by cascading flip-flops so that the output of one flip-flop is the input of the next flip-flop. All are connected to the same clock. 
 
-%figure 4 because adding 555 timer pic?
+%figure 4 because adding 555 timer pic? YES XD
 A 4-bit shift register is made up of four flip-flops, as shown in figure (4). 
 
 \begin{figure}[h]
@@ -98,17 +105,17 @@ This means that after four clock pulses, four bits will have been loaded: one fo
 
 \section{Results and Analysis}
 % No clue what values we used
-In setting up the 555 timer, $R_a$ was chosen to be $X \Omega$,$R_b$ was chosen to be $X \Omega$, and $C$ was chosen to be XF. Using equation (1), this gave an expected frequency of XHz.
+In setting up the 555 timer, $R_a$ was chosen to be 35.18k$\Omega$, $R_b$ was chosen to be 677k$\Omega$, and $C$ was chosen to be 0.947$\mu$F. Using equation (1), this gave an expected frequency of 1.98Hz.
 
 \begin{equation*}
 \begin{aligned}
-f_{expected} &= \frac{1.4}{C(R_a + 2R_b)}\\ &= \frac{1.4}{0.947\times 10^{-6}(2(677\times 10^3) + 35.18\times 10^3}\\ &= 1.98 Hz
+f_{expected} &= \frac{1.4}{C(R_a + 2R_b)}\\ &= \frac{1.4}{0.947\times 10^{-6}(35.18\times 10^3 + 2(677\times 10^3)}\\ &= 1.98 Hz
 \end{aligned}
 \end{equation*}
 
 This was effective, as the clock pulses were slow enough that they were easy to observe.
 
-When the "data" was given to the circuit by flipping the switch to provide the 5V input, the LED at Q1 lit up, followed by the LED at Q2, then Q3, then Q4; when Q4 lit up all four LEDs were lit. When the switch was opened so that no voltage was provided to the input D, the LED at Q4 dimmed first, then Q3, then Q2, and finally Q1. 
+When the ``data" was given to the circuit by flipping the switch to provide the 5V input, the LED at Q1 lit up, followed by the LED at Q2, then Q3, then Q4; when Q4 lit up all four LEDs were lit. When the switch was opened so that no voltage was provided to the input D, the LED at Q4 dimmed first, then Q3, then Q2, and finally Q1. 
 
 This behavior was what was expected, as the bit register should push the bit forward a step on each clock pulse.
 
@@ -116,7 +123,7 @@ This behavior was what was expected, as the bit register should push the bit for
 
 \section{Conclusion}
 
-The shift register was built successfully. The LEDs at each output lit as the "bit" was pushed through, then turned off one at a time beginning with Q4 and ending with Q1.
+The shift register was built successfully. The LEDs at each output lit as the ``bit" was pushed through, then turned off one at a time beginning with Q4 and ending with Q1.
 
 \end{document}
 
