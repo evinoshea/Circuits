@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 MAY 2016 09:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 MAY 2016 10:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -258,48 +258,55 @@ Package pdftex.def Info: setreset.png used on input line 32.
 <dflipflop.png, id=3, 552.0625pt x 274.02374pt>
 File: dflipflop.png Graphic file (type png)
  <use dflipflop.png>
-Package pdftex.def Info: dflipflop.png used on input line 59.
+Package pdftex.def Info: dflipflop.png used on input line 60.
 (pdftex.def)             Requested size: 248.42583pt x 123.30954pt.
 
-Overfull \hbox (2.42583pt too wide) in paragraph at lines 59--60
+Overfull \hbox (2.42583pt too wide) in paragraph at lines 60--61
+ [][] 
+ []
+
+<bitshifter.png, id=4, 995.72pt x 348.30125pt>
+File: bitshifter.png Graphic file (type png)
+ <use bitshifter.png>
+Package pdftex.def Info: bitshifter.png used on input line 80.
+(pdftex.def)             Requested size: 258.88109pt x 90.55618pt.
+
+Overfull \hbox (12.88109pt too wide) in paragraph at lines 80--81
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<bitshifter.png, id=4, 995.72pt x 348.30125pt>
-File: bitshifter.png Graphic file (type png)
- <use bitshifter.png>
-Package pdftex.def Info: bitshifter.png used on input line 76.
-(pdftex.def)             Requested size: 258.88109pt x 90.55618pt.
-
-Overfull \hbox (12.88109pt too wide) in paragraph at lines 76--77
- [][] 
- []
-
 [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./set
-reset.png> <./dflipflop.png> <./bitshifter.png>] [2] (./phys605lab9.aux) ) 
+reset.png> <./dflipflop.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 92.
+
+[2 <./bitshifter.png>] (./phys605lab9.aux) ) 
 Here is how much of TeX's memory you used:
- 3645 strings out of 493089
- 47833 string characters out of 6134842
- 138497 words of memory out of 5000000
- 7110 multiletter control sequences out of 15000+600000
+ 3644 strings out of 493089
+ 47823 string characters out of 6134842
+ 130497 words of memory out of 5000000
+ 7109 multiletter control sequences out of 15000+600000
  5651 words of font info for 21 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,6n,23p,619b,248s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/loc
-al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on phys605lab9.pdf (2 pages, 134060 bytes).
+ 37i,8n,23p,532b,248s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy7.pfb>
+Output written on phys605lab9.pdf (2 pages, 150123 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
+ 54 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
