@@ -62,15 +62,15 @@ The benefit of having two stages of amplification is that the output of the firs
 
 The output of the first amplifier was then sent to three different filters and amplifiers. Each of these corresponded to a different piece of the sound spectrum: low, middle, and high. Each of the filters used are second order filters. This means that they have second order roll off. This is important for the visualizer as the filters have to be good enough to only allow voltage through in the frequency spectrum desired. If the roll off were not good enough, loud sounds in on frequency spectrum could potentially cause an effect in another frequency spectrum. 
 
-The low frequency was captured by using the second stage filter shown in figure (2).%~\cite{Low}
+The low frequency was captured by using the second stage filter shown in figure (2).~\cite{Low}
 
-The gain of this filter could be calculated as shown below%~\cite{Low}:
+The gain of this filter could be calculated as shown below~\cite{Low}:
 
 \begin{eqnarray}
 Gain &=& 1 + \frac{R_2}{R_1} 
 \end{eqnarray}
 
-Furthermore, the -3dB point could be calculated as shown below%~\cite{Low}:
+Furthermore, the -3dB point could be calculated as shown below~\cite{Low}:
 
 \begin{eqnarray}
 f_C &=& \frac{1}{2\pi \sqrt{R_3R_4C_1C_2}}
@@ -92,15 +92,15 @@ Since these two relations do not have overlapping circuit elements, the gain and
 \end{minipage}
 \end{figure}
 
-The high pass filter used acted very similarly to the low pass filter. It was also a second stage filter that had both the capability of filtering and amplifying a signal independently. The circuit used is shown in figure (3).%~\cite{High}
+The high pass filter used acted very similarly to the low pass filter. It was also a second stage filter that had both the capability of filtering and amplifying a signal independently. The circuit used is shown in figure (3).~\cite{High}
 
-The gain of this filter could be calculated as shown below%~\cite{High}:
+The gain of this filter could be calculated as shown below~\cite{High}:
 
 \begin{eqnarray}
 Gain &=& 1 + \frac{R_2}{R_1} 
 \end{eqnarray}
 
-Furthermore, the -3dB point could be calculated as shown below%~\cite{High}:
+Furthermore, the -3dB point could be calculated as shown below~\cite{High}:
 
 \begin{eqnarray}
 f_C &=& \frac{1}{2\pi \sqrt{R_3R_4C_1C_2}}
@@ -117,17 +117,17 @@ As with the low pass filter, the nature of the high pass filter and the gain cou
 
 \end{figure}
 
-The band pass filter used in the circuit also had second order roll off. The flaw with this filter was that the width of the band and the gain of the filter were intrinsically tided. This problem was solved by adding another amplifier before the filter. The amplifier that came before the filter is the same one that was used for the output of the microphone that is shown in figure (1). This amplifier had different resistor values and a different gain. The output of this amplifier was then sent to the band pass filter shown in figure (4).%~\cite{Band}
+The band pass filter used in the circuit also had second order roll off. The flaw with this filter was that the width of the band and the gain of the filter were intrinsically tided. This problem was solved by adding another amplifier before the filter. The amplifier that came before the filter is the same one that was used for the output of the microphone that is shown in figure (1). This amplifier had different resistor values and a different gain. The output of this amplifier was then sent to the band pass filter shown in figure (4).~\cite{Band}
 
 
 
-The middle frequency of the band can be calculated with the equation shown below%~\cite{Band}:
+The middle frequency of the band can be calculated with the equation shown below~\cite{Band}:
 
 \begin{eqnarray}
 f_C &=& \frac{1}{2\pi \sqrt{R_1R_2C_1C_2}}
 \end{eqnarray}
 
-The width of the band pass filter is the distance between the low -3dB point and the high -3dB point. This can be calculated as shown below%~\cite{Band}:
+The width of the band pass filter is the distance between the low -3dB point and the high -3dB point. This can be calculated as shown below~\cite{Band}:
 
 \begin{eqnarray}
 Q_{BP} = \frac{1}{2}\sqrt{\frac{R_2}{R_1}}
