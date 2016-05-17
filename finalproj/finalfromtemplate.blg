@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: finalfromtemplate.aux
+The style file: IEEEbib.bst
+Database file #1: phys605final.bib
+You've used 3 entries,
+            1838 wiz_defined-function locations,
+            468 strings with 3837 characters,
+and the built_in function-call counts, 356 in all, are:
+= -- 33
+> -- 3
+< -- 0
++ -- 3
+- -- 0
+* -- 11
+:= -- 42
+add.period$ -- 3
+call.type$ -- 3
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 15
+empty$ -- 55
+format.name$ -- 0
+if$ -- 91
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 0
+newline$ -- 15
+num.names$ -- 0
+pop$ -- 24
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 12
+stack$ -- 0
+substring$ -- 0
+swap$ -- 3
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 4
+write$ -- 29

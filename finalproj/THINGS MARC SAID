@@ -1,0 +1,18 @@
+
+1. I am attaching (again) the Project Requiments. As you know, the project is worth 30% of your final grade. However, since the originally proposed "project description" did not really evolve as intended, I am changing the grading to have all of the 30% depend on the project AND the writeup. Since some of the reports will be more involved than others, I may deviate from a typical "even split" between the project itself and the report.
+
+2. About the report, please note the following:
+
+a. You are required to use the template that I sent last week, either the MS Word or latex version is fine. However, you must submit the project to me as an email attachment that is a PDF file. That is the only acceptable format.
+
+b. This needs to be a formal write up. Some people might choose to write in the 3rd person (most formal), others might choose first person (acceptable). In either case, do NOT use conjunctions (like "didn't"), slang ("gonna", LOL, etc), humorous comments. This really needs to be written as if you were submitting to a journal - use professionalism.
+
+c. I can answer questions via email, but I will not be able to review drafts of your work. There just isn't time. Feel free to show and discuss your reports with each other, though.
+
+d. In your description in the report (probably the first section), state the goals of the project. Follow with details of the circuit, why you made the choices you made, then test results and interpretation, followed by conclusions and (maybe) improvements to be made for a new and improved circuit.
+
+e. Keep the report to 3 or 4 pages long. Slightly shorter is ok, reports longer than 4 pages WILL BE REJECTED.
+
+f. Figures need to be clear - do not include pixelized images. Microsoft products tend to convert file formats on the fly, which is not good. In other words, if you drop a pdf file into Word (or powerpoint) it will automatically be converted to JPG, but at poor resolution. The way around this is to convert to JPG using other software (Preview on OSX works well); use 300 dpi resolution. Latex keeps everything in PDF, so there is no issue there. Also, if you have trouble getting a good image to begin with, try "printing to a file", which should produce a PDF file with 300 dpi or better. Screenshots are gross, usually only at 72 dpi.
+I am attaching the
+
